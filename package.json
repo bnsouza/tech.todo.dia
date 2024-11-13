@@ -1,0 +1,52 @@
+{
+  "name": "tech.todo.dia",
+  "version": "1.0.0",
+  "description": "Repository to generate a video with IA and Remotion",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.71",
+    "@remotion/animation-utils": "4.0.225",
+    "@remotion/cli": "4.0.225",
+    "@remotion/layout-utils": "4.0.225",
+    "@remotion/media-utils": "4.0.225",
+    "@remotion/noise": "^4.0.225",
+    "@remotion/tailwind": "4.0.225",
+    "@remotion/zod-types": "4.0.225",
+    "ai": "^3.4.31",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.11.11",
+    "lucide-react": "^0.454.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.225",
+    "zod": "3.22.3"
+  },
+  "devDependencies": {
+    "@remotion/captions": "4.0.225",
+    "@remotion/eslint-config": "4.0.225",
+    "@remotion/install-whisper-cpp": "4.0.225",
+    "@types/node": "^22.8.6",
+    "@types/react": "18.3.1",
+    "@types/web": "0.0.166",
+    "eslint": "8.56.0",
+    "prettier": "3.3.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "5.5.4"
+  },
+  "scripts": {
+    "automation": "pnpm ts-node automation/script.ts",
+    "start": "remotion studio",
+    "build": "remotion render CaptionedVideo",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "create-subtitles": "node sub.mjs"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+}
