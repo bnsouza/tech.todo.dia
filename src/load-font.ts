@@ -1,6 +1,6 @@
 import {continueRender, delayRender, staticFile} from "remotion";
 
-export const TheBoldFont = `TheBoldFont`;
+export const Font = "Poppins";
 
 let loaded = false;
 
@@ -13,7 +13,7 @@ export const loadFont = async (): Promise<void> => {
 
   loaded = true;
 
-  const font = new FontFace(TheBoldFont, `url('${staticFile("Poppins-ExtraBold.ttf")}') format('truetype')`);
+  const font = new FontFace(Font, `url('${staticFile("fonts/Poppins-ExtraBold.ttf")}') format('truetype')`);
 
   await font.load();
   document.fonts.add(font);

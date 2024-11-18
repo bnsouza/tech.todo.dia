@@ -1,33 +1,45 @@
-import {PostHandler} from "./data/postHandler";
-import {TopicHandler} from "./data/topicHandler";
+// ------------------------------------------------------------------------------------------------
 
-export class NextTopicController {
-  private postHandler: PostHandler;
-  private topicHandler: TopicHandler;
+import {PostController} from "./Post";
+import {TopicController} from "./Topic";
+
+// ------------------------------------------------------------------------------------------------
+// Controller to handle the next topic suggestions and methods to interact with the data
+export class NextController {
+  private postCtrl: PostController;
+  private topicCtrl: TopicController;
   private coveredTopics: string;
 
-  constructor() {
-    this.postHandler = new PostHandler("./automation/data/posts.json");
-    this.topicHandler = new TopicHandler("./automation/data/topics.json", this.getActiveLevel());
+  // ----------------------------------------------------------------------------------------------
+  // Constructor
+  constructor(postCtrl: PostController, topicCtrl: TopicController) {
+    this.postCtrl = postCtrl;
+    this.topicCtrl = topicCtrl;
     this.syncLevels();
     this.coveredTopics = "";
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the active level
   public getActiveLevel(): string {
-    return this.postHandler.getLevel();
+    return this.postCtrl.getLevel();
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Sync the levels between the post handler and the topic
   public syncLevels() {
-    if (this.getActiveLevel() !== this.topicHandler.getLevel()) {
-      this.postHandler.setLevel(this.topicHandler.getLevel());
+    if (this.getActiveLevel() !== this.topicCtrl.getLevel()) {
+      this.postCtrl.setLevel(this.topicCtrl.getLevel());
     }
   }
 
-  public getNextTopicPrompts(): {systemPrompt: string; nextTopicPrompt: string} {
+  // ----------------------------------------------------------------------------------------------
+  // Prepare the next topic prompts
+  public getPrompts(): {systemPrompt: string; nextTopicPrompt: string} {
     // Get the covered topics, the first instruction, the progression instruction, and the actual level
     this.getCoveredTopics();
     const firstInstruction = this.getRemainingTopicsInstruction();
-    const progressionInstruction = this.topicHandler.getProgression();
+    const progressionInstruction = this.topicCtrl.getProgression();
     const actualLevel = this.getActiveLevel();
 
     // Prepare the final prompts
@@ -61,11 +73,13 @@ export class NextTopicController {
     return finalPrompt;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the topics covered so far
   public getCoveredTopics(): string {
     // Get all covered topics separated by `,`
     this.coveredTopics =
       "`" +
-      this.postHandler
+      this.postCtrl
         .getAllPosts()
         .map((post) => post.topic)
         .join("`, `") +
@@ -73,9 +87,11 @@ export class NextTopicController {
     return this.coveredTopics;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the remaining topics to help the AI suggest the next topic
   public getRemainingTopicsInstruction(): string {
     // Get all remaining topics for the current level
-    const remainingTopics = this.topicHandler.getAllRemainingTopics(this.coveredTopics);
+    const remainingTopics = this.topicCtrl.getAllRemainingTopics(this.coveredTopics);
 
     // If there are remaining topics, suggest one of them
     if (remainingTopics.length) {
@@ -87,7 +103,7 @@ export class NextTopicController {
     }
 
     // There are no remaining topics in this level, move to the next level
-    const nextLevel = this.topicHandler.setNextLevel();
+    const nextLevel = this.topicCtrl.setNextLevel();
 
     // If we covered all available topics, set the AI free to suggest a new topic
     if (!nextLevel) {
@@ -95,27 +111,34 @@ export class NextTopicController {
     }
 
     // There are still new levels, suggest to review the next level
-    this.postHandler.setLevel(nextLevel);
+    this.postCtrl.setLevel(nextLevel);
     return (
       "The series has covered all available topics of this level. " +
       "Please review the next level items and feel free to suggest topic not covered yet and not listed " +
       "in the next level items or advance to one of the next level topics:" +
-      this.topicHandler.getAllRemainingTopics().join(", ")
+      this.topicCtrl.getAllRemainingTopics().join(", ")
     );
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // After the AI suggests a topic, add it to the list of topics
   public addPost(title: string, topic: string, description: string, justification: string): number {
-    const index = this.postHandler.addPost(title, topic, description, justification);
+    const index = this.postCtrl.addPost(title, topic, description, justification);
     return index;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Update a post in the list of topics
   public updatePost(index: number, key: string, value: string): void {
-    const topic = this.postHandler.getPost(index);
+    const topic = this.postCtrl.getPost(index);
     if (!topic) {
       throw new Error("Topic not found");
     }
     // @ts-expect-error - We know that the key exists in the topic object
     topic[key] = value;
-    this.postHandler.updatePost(index, topic);
+    this.postCtrl.updatePost(index, topic);
   }
-}
+
+  // ----------------------------------------------------------------------------------------------
+} // End of NextController
+// ------------------------------------------------------------------------------------------------

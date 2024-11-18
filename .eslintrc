@@ -1,6 +1,10 @@
 {
   "extends": "@remotion",
   "globals": {
-    "process": "readonly",
+    "process": "readonly"
   },
+  "rules": {
+    "@remotion/deterministic-randomness": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  }
 }

@@ -1,0 +1,38 @@
+{
+  "level": "1 - Basic",
+  "posts": [
+    {
+      "title": "Operações Lógicas Básicas",
+      "topic": "Logical Operators",
+      "description": "Explore como as operações lógicas formam a base do pensamento computacional, incluindo exemplos simples como AND, OR e NOT.",
+      "justification": "Escolhi 'Operações Lógicas' porque é um conceito fundamental que ajuda a entender como os computadores processam decisões simples, construindo diretamente sobre a compreensão de operações básicas de I/O e componentes de hardware. Este tópico é mais apropriado para o nível básico em comparação com outros mais complexos como 'Programação' ou 'Software', e é essencial antes de avançar para programação mais detalhada. Além disso, operações lógicas são visuais e interativas, o que pode ser muito envolvente para iniciantes.",
+      "script": {
+        "hook": {
+          "text": "Quer tomar decisões mais inteligentes na programação? Vamos desvendar os operadores lógicos!",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/hook.mp3",
+          "duration": 0
+        },
+        "intro": {
+          "text": "No mundo da programação, os operadores lógicos são como os super-heróis das decisões. Eles ajudam a decidir entre o 'sim' e o 'não', ou entre o 'verdadeiro' e o 'falso'.",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/intro.mp3",
+          "duration": 0
+        },
+        "explanation": {
+          "text": "Os operadores lógicos mais comuns são o AND (E), OR (OU) e NOT (NÃO). O AND só retorna verdadeiro se todas as condições forem verdadeiras. O OR retorna verdadeiro se pelo menos uma condição for verdadeira. Já o NOT inverte o resultado: se era verdadeiro, fica falso, e vice-versa. Esses operadores são fundamentais para controlar o fluxo de decisões em um programa.",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/explanation.mp3",
+          "duration": 0
+        },
+        "example": {
+          "text": "Imagine que você está programando um jogo e quer verificar se um jogador pode avançar para a próxima fase. Ele precisa ter mais de 100 pontos E menos de 3 vidas perdidas. Aqui, usamos o operador AND para garantir que ambas as condições sejam verdadeiras antes de permitir que ele avance.",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/example.mp3",
+          "duration": 0
+        },
+        "engagement": {
+          "text": "E você, já usou operadores lógicos em algum projeto? Compartilhe como eles ajudaram a tomar decisões no seu código nos comentários abaixo!",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/engagement.mp3",
+          "duration": 0
+        }
+      }
+    }
+  ]
+}

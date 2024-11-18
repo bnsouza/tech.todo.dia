@@ -1,11 +1,17 @@
-import {Topic, TopicSchema} from "./types";
-import {JSONHandler} from "./jsonHandler";
+// ------------------------------------------------------------------------------------------------
 
-export class TopicHandler extends JSONHandler<TopicSchema> {
+import {Topic, TopicSchema} from "../types";
+import {JSONController} from "./Json";
+
+// ------------------------------------------------------------------------------------------------
+// Handler class to manage topics data
+export class TopicController extends JSONController<TopicSchema> {
   private level: string;
   private progression: string;
   private levelTopics: Topic[];
 
+  // ----------------------------------------------------------------------------------------------
+  // Constructor
   constructor(filePath: string, level?: string) {
     // Call the parent constructor
     super(filePath);
@@ -25,18 +31,26 @@ export class TopicHandler extends JSONHandler<TopicSchema> {
     this.levelTopics = data[this.level].topics;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the active level of difficulty
   public getLevel(): string {
     return this.level;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the progression instruction for the current level
   public getProgression(): string {
     return this.progression;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get the list of covered topics in the current level
   public getAllTopics(): Topic[] {
     return this.levelTopics;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Get a specific topic by index
   public getAllRemainingTopics(coveredTopics: string = ""): string[] {
     const topics = this.getAllTopics()
       .filter((t) => !coveredTopics.includes(t.topic))
@@ -44,13 +58,14 @@ export class TopicHandler extends JSONHandler<TopicSchema> {
 
     // Shuffle the topics to make the suggestions less predictable
     for (let i = topics.length - 1; i > 0; i--) {
-      // eslint-disable-next-line @remotion/deterministic-randomness
       const j = Math.floor(Math.random() * (i + 1));
       [topics[i], topics[j]] = [topics[j], topics[i]];
     }
     return topics;
   }
 
+  // ----------------------------------------------------------------------------------------------
+  // Set the active level of difficulty
   public setNextLevel(): string {
     const data = this.read();
     const levels = Object.keys(data);
@@ -58,4 +73,7 @@ export class TopicHandler extends JSONHandler<TopicSchema> {
     this.level = levels[currentLevelIndex + 1] || "";
     return this.level;
   }
-}
+
+  // ----------------------------------------------------------------------------------------------
+} // End of TopicController
+// ------------------------------------------------------------------------------------------------

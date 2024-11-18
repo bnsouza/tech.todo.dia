@@ -1,13 +1,14 @@
-import "./tailwind.css";
 import {Composition, staticFile} from "remotion";
-import {CaptionedVideo, calculateCaptionedVideoMetadata, captionedVideoSchema} from "./CaptionedVideo";
 
-import {TodayVideo} from "./TodayVideo/TodayVideo";
+import {calculateCaptionedVideoMetadata, CaptionedVideo, captionedVideoSchema} from "./CaptionedVideo";
+import {Reel} from "./Reel/Reel";
+
+import "./tailwind.css";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Composition id="TodayVideo" component={TodayVideo} durationInFrames={2700} fps={30} width={1080} height={1920} />
+      <Composition id="Reel" component={Reel} durationInFrames={2700} fps={30} width={1080} height={1920} />
       <Composition
         id="CaptionedVideo"
         component={CaptionedVideo}
@@ -16,7 +17,7 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{
-          src: staticFile("TodayVideo.mp4"),
+          src: staticFile("Reel.mp4"),
         }}
       />
     </>
