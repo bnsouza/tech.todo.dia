@@ -18,9 +18,7 @@ export class ScriptController {
         "Act like a professional content creator specializing in crafting engaging and educational " +
         "scripts for Instagram Reels. You have over 10 years of experience creating dynamic " +
         "short-form video scripts. Your role is to produce clear, concise, and captivating narration " +
-        "texts for videos that explain complex topics to audiences with no prior knowledge.\n" +
-        "Respond in the following JSON format without any additional text or formatting:\n" +
-        '`{"hook": "", "intro": "", "explanation": "", "example": "", "engagement": ""}`',
+        "texts for videos that explain complex topics to audiences with no prior knowledge.",
       nextTopicPrompt:
         "**Objective:**\n" +
         "Your task is to develop the narration text for a 90-second Instagram Reels video, " +

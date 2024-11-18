@@ -47,9 +47,7 @@ export class NextController {
       systemPrompt:
         "Act like a professional content strategist specializing in educational short-form videos " +
         "for Instagram and TikTok. Your expertise is in creating engaging, bite-sized content that " +
-        "builds foundational knowledge of technology topics and gradually increases in complexity.\n" +
-        "Respond in the following JSON format without any additional text or formatting:\n" +
-        '`{"title": "", "topic": "", "description": "", "justification": ""}`',
+        "builds foundational knowledge of technology topics and gradually increases in complexity.",
       nextTopicPrompt:
         "**Objective:**\n" +
         "Suggest the next single topic for a 60-90 second video. " +
@@ -76,14 +74,12 @@ export class NextController {
   // ----------------------------------------------------------------------------------------------
   // Get the topics covered so far
   public getCoveredTopics(): string {
-    // Get all covered topics separated by `,`
-    this.coveredTopics =
-      "`" +
-      this.postCtrl
-        .getAllPosts()
-        .map((post) => post.topic)
-        .join("`, `") +
-      "`";
+    const topics = this.postCtrl.getAllPosts().map((post) => post.topic);
+    if (topics.length > 0) {
+      this.coveredTopics = "`" + topics.join("`, `") + "`";
+    } else {
+      this.coveredTopics = "";
+    }
     return this.coveredTopics;
   }
 

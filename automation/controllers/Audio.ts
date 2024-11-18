@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 // ------------------------------------------------------------------------------------------------
 
-import {createWriteStream} from "fs";
+import {createWriteStream, existsSync, mkdirSync} from "fs";
 import {createReadStream} from "node:fs";
 import * as path from "path";
 import {pipeline, Readable} from "stream";
@@ -35,6 +35,13 @@ export class AudioController {
     const keys = Object.keys(script);
     const audioScript: {[key: string]: AudioProps} = {};
 
+    // Verify if the audio directory exists and create it if it doesn't
+    const audioDir = path.join(__dirname, `../../public/audio/${this.index}`);
+    if (!existsSync(audioDir)) {
+      mkdirSync(audioDir, {recursive: true});
+    }
+
+    // Generate audio files for each script key
     for (const key of keys) {
       const audio = await this.client.generate({
         voice: process.env.ELEVENLABS_VOICE_ID ?? "Bella",
@@ -43,13 +50,12 @@ export class AudioController {
       });
 
       // Save file to disk
-      const filePath = path.join(__dirname, `../../public/audio/${this.index}/${key}.mp3`);
-      console.log(`    - Saving audio in "${filePath}"`);
+      const filePath = path.join(audioDir, `/${key}.mp3`);
       await this.saveFile(audio, filePath);
 
       audioScript[key] = {
         text: script[key],
-        audio: filePath,
+        audio: path.relative(path.join(audioDir, "../../.."), filePath),
         duration: await this.getDurationInFrames(filePath),
       };
     }

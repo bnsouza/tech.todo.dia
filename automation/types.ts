@@ -8,10 +8,19 @@ export type AudioProps = {
 
 // ------------------------------------------------------------------------------------------------
 
+export type Media = {
+  type: "video" | "image";
+  video?: string;
+  image?: string;
+  duration?: number;
+};
+
+// ------------------------------------------------------------------------------------------------
+
 export type Post = {
-  title: string;
-  topic: string;
-  level: string;
+  title?: string;
+  topic?: string;
+  level?: string;
   description?: string;
   justification?: string;
   difficulty?: string;
@@ -44,7 +53,7 @@ export type Sequence = {
   text: string;
   audio: string;
   duration: number;
-  media?: string;
+  media?: Media[];
 };
 
 // ------------------------------------------------------------------------------------------------

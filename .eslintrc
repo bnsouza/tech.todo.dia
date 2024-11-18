@@ -4,6 +4,7 @@
     "process": "readonly"
   },
   "rules": {
+    "camelcase": "off",
     "@remotion/deterministic-randomness": "off",
     "@typescript-eslint/no-explicit-any": "off"
   }

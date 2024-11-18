@@ -33,6 +33,143 @@
           "duration": 0
         }
       }
+    },
+    {
+      "title": "Entendendo Bits e Bytes",
+      "topic": "Bit",
+      "description": "Neste vídeo, exploraremos o que são bits e como eles se combinam para formar bytes, a base da computação digital. Aprenderemos como essas pequenas unidades de dados representam informações e como são fundamentais para entender o funcionamento dos computadores.",
+      "justification": "O tópico 'Bit' é ideal para seguir a progressão de conceitos tangíveis como componentes de hardware e unidades básicas de dados. Ele é fundamental para construir uma compreensão básica de como os dados são processados e armazenados em dispositivos digitais, servindo como alicerce para temas mais complexos no futuro. Além disso, é um conceito que captura a curiosidade dos iniciantes, pois desvenda a magia por trás de toda a tecnologia digital que usamos no dia a dia.",
+      "script": {
+        "hook": {
+          "text": "Você sabia que um simples bit pode ser a chave para entender a tecnologia moderna?",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/hook.mp3",
+          "duration": 108
+        },
+        "intro": {
+          "text": "Hoje vamos desvendar o que é um bit, a menor unidade de dados em computação, e por que ele é tão fundamental!",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/intro.mp3",
+          "duration": 177
+        },
+        "explanation": {
+          "text": "Imagine o bit como um interruptor de luz, que pode estar ligado ou desligado. No mundo digital, isso se traduz em 0 e 1. Cada bit representa uma escolha entre duas possibilidades, e é essa simplicidade que permite construir sistemas complexos a partir deles.",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/explanation.mp3",
+          "duration": 501
+        },
+        "example": {
+          "text": "Pense em como você forma palavras usando letras. No computador, bits são usados de forma semelhante para criar tudo, desde textos em um documento até imagens e vídeos. Por exemplo, um byte, que são 8 bits juntos, pode representar até 256 possibilidades diferentes!",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/example.mp3",
+          "duration": 474
+        },
+        "engagement": {
+          "text": "E aí, você já tinha imaginado que algo tão pequeno como um bit poderia fazer tanto? Comente abaixo como você vê os bits impactando sua vida diária!",
+          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/engagement.mp3",
+          "duration": 240
+        }
+      }
+    },
+    {
+      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
+      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "description": "Este vídeo abordará os componentes essenciais de hardware que os usuários interagem diariamente: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador, proporcionando uma base sólida para entender a interação humano-computador.",
+      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se alinha perfeitamente com o nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para conceitos computacionais mais complexos, como I/O (Input and Output), que poderiam ser explorados em vídeos futuros. Além disso, ao focar em dispositivos que os espectadores usam todos os dias, o vídeo tem um alto potencial de engajamento, tornando os conceitos mais acessíveis e interessantes para um público iniciante.",
+      "script": {
+        "hook": {
+          "text": "Já pensou como os periféricos certos podem transformar sua experiência no computador?",
+          "audio": "public/audio/002/hook.mp3",
+          "duration": 110
+        },
+        "intro": {
+          "text": "Periféricos como teclado, mouse e monitor são os super-heróis do nosso setup de computador. Vamos descobrir como eles fazem toda a diferença!",
+          "audio": "public/audio/002/intro.mp3",
+          "duration": 244
+        },
+        "explanation": {
+          "text": "Cada periférico tem um papel crucial: o teclado permite uma digitação rápida e eficiente, o mouse garante precisão nos cliques e o monitor exibe as informações com clareza. Juntos, eles otimizam nossa interação com o mundo digital, seja para trabalhar, estudar ou jogar.",
+          "audio": "public/audio/002/explanation.mp3",
+          "duration": 493
+        },
+        "example": {
+          "text": "Imagine que você está jogando um jogo competitivo. Com um mouse de alta precisão, seus movimentos são mais rápidos e precisos. Um teclado responsivo evita atrasos nas suas ações, e um monitor com boa resolução te dá uma visão clara do jogo, aumentando suas chances de vitória.",
+          "audio": "public/audio/002/example.mp3",
+          "duration": 473
+        },
+        "engagement": {
+          "text": "E aí, qual periférico faz mais diferença no seu dia a dia? Compartilhe nos comentários!",
+          "audio": "public/audio/002/engagement.mp3",
+          "duration": 127
+        }
+      }
+    },
+    {
+      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
+      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "description": "Este vídeo abordará os componentes básicos de hardware que são essenciais para a interação com computadores: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador.",
+      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se encaixa perfeitamente no nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para entender como os usuários interagem com os computadores, o que é crucial antes de avançar para conceitos mais abstratos como sistemas numéricos ou operações lógicas. Além disso, é um tópico visualmente atraente e facilmente compreensível, o que pode aumentar o engajamento do público iniciante.",
+      "script": {
+        "hook": {
+          "text": "Já pensou como os periféricos podem transformar sua experiência com o computador?",
+          "audio": "public/audio/003/hook.mp3",
+          "duration": 100
+        },
+        "intro": {
+          "text": "Periféricos como teclado, mouse e monitor não são apenas acessórios, são as ferramentas que conectam você ao mundo digital.",
+          "audio": "public/audio/003/intro.mp3",
+          "duration": 182
+        },
+        "explanation": {
+          "text": "Cada periférico tem um papel crucial: o teclado permite a entrada de texto, o mouse facilita a navegação e o monitor é a janela para o universo virtual. Juntos, eles definem a eficiência e o conforto da sua interação com o computador.",
+          "audio": "public/audio/003/explanation.mp3",
+          "duration": 394
+        },
+        "example": {
+          "text": "Imagine jogar um videogame com um mouse lento ou trabalhar em um monitor com baixa resolução. Frustrante, né? Agora, pense no impacto de um teclado ergonômico e um monitor de alta definição em sua produtividade e diversão!",
+          "audio": "public/audio/003/example.mp3",
+          "duration": 370
+        },
+        "engagement": {
+          "text": "E você, qual periférico não pode faltar na sua configuração? Compartilhe nos comentários!",
+          "audio": "public/audio/003/engagement.mp3",
+          "duration": 135
+        }
+      }
+    },
+    {
+      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
+      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "description": "Neste vídeo, exploraremos os periféricos básicos de um computador: teclado, mouse e monitor. Vamos entender como cada um funciona, sua importância no uso diário do computador e como eles se conectam e interagem com o sistema central.",
+      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e facilmente compreensível para iniciantes, alinhando-se com o objetivo de construir conhecimento fundamental. Este tópico permite aos espectadores relacionar-se imediatamente com objetos que eles usam diariamente, aumentando o engajamento. Comparado a conceitos mais abstratos como 'Lógica de Programação' ou 'Sistemas Numéricos', periféricos oferecem uma base concreta e visual, facilitando a aprendizagem inicial e preparando o terreno para conceitos computacionais mais complexos posteriormente.",
+      "script": {
+        "hook": {
+          "text": "Já pensou como os periféricos transformam sua experiência com o computador?",
+          "audio": "public/audio/004/hook.mp3",
+          "duration": 91,
+          "media": []
+        },
+        "intro": {
+          "text": "Periféricos como teclado, mouse e monitor não são apenas acessórios, são as ferramentas que nos conectam ao mundo digital!",
+          "audio": "public/audio/004/intro.mp3",
+          "duration": 187,
+          "media": []
+        },
+        "explanation": {
+          "text": "Cada periférico tem um papel crucial: o teclado permite a entrada de texto, o mouse facilita a navegação e o monitor é a janela para o universo digital. Juntos, eles otimizam nossa interação com o computador, tornando-a mais rápida, eficiente e confortável.",
+          "audio": "public/audio/004/explanation.mp3",
+          "duration": 495,
+          "media": []
+        },
+        "example": {
+          "text": "Imagine jogar um videogame sem um bom monitor ou editar um documento sem um teclado adequado. Difícil, né? Esses periféricos não só facilitam essas tarefas, mas também as tornam possíveis!",
+          "audio": "public/audio/004/example.mp3",
+          "duration": 348,
+          "media": []
+        },
+        "engagement": {
+          "text": "E você, qual periférico não pode faltar na sua configuração? Compartilhe nos comentários!",
+          "audio": "public/audio/004/engagement.mp3",
+          "duration": 124,
+          "media": []
+        }
+      }
     }
   ]
 }
