@@ -103,7 +103,7 @@ export class VideoController {
 
     // Verify the language
     if (this.language === "pt") {
-      systemPrompt += " and the contents should be in Brazilian Portuguese.";
+      systemPrompt += " **THE CONTENTS OF YOUR ANSWER MUST BE IN BRAZILIAN PORTUGUESE.**";
     }
 
     // Print the prompts
@@ -127,21 +127,21 @@ export class VideoController {
     });
 
     // Print the generated text
-    this.post = result.object.post;
-    this.consoleLog(this.post);
+    const newPost = result.object.post;
+    this.consoleLog(newPost);
     this.printLine();
 
     // Test if the post is empty
-    if (!this.post) {
+    if (!newPost) {
       throw new Error("The post is empty.");
     }
 
     // Add the post to the list of topics
     this.index = controller.addPost(
-      this.post.title ?? "",
-      this.post.topic ?? "",
-      this.post.description ?? "",
-      this.post.justification ?? ""
+      newPost.title ?? "",
+      newPost.topic ?? "",
+      newPost.description ?? "",
+      newPost.justification ?? ""
     );
 
     // Print the index of the added topic
@@ -153,7 +153,11 @@ export class VideoController {
   // Prepare the script for the video
   public async prepareScript() {
     // Check if the post is empty
-    if (!this.post) throw new Error("Error preparing the script (prepareScript).");
+    if (!this.post) {
+      const post = this.postCtrl.getPost(this.index);
+      if (!post) throw new Error("Error preparing the script (prepareScript).");
+      this.post = post;
+    }
 
     // Create a new instance of the ScriptController
     const scriptCtrl = new ScriptController(this.post.topic!);
@@ -163,7 +167,7 @@ export class VideoController {
 
     // Verify the language
     if (this.language === "pt") {
-      systemPrompt += " and the contents should be in Brazilian Portuguese.";
+      systemPrompt += " **THE CONTENTS OF YOUR ANSWER MUST BE IN BRAZILIAN PORTUGUESE.**";
     }
 
     // Print the prompts
@@ -217,11 +221,19 @@ export class VideoController {
   // Print a line to the console
   public async getMedias(): Promise<void> {
     // Check if the post is empty
-    if (!this.post || !this.post.topic || !this.post.script) throw new Error("Error preparing the script (getMedias).");
+    if (!this.post) {
+      const post = this.postCtrl.getPost(this.index);
+      if (!post) throw new Error("Error on obtaining post (getMedias).");
+      this.post = post;
+    }
+
+    // Check if the post has a topic and a script
+    if (!this.post.topic || !this.post.description || !this.post.script)
+      throw new Error("Error on post data (getMedias).");
 
     // Create a new instance of the MediaController
     const {topic, description} = this.post;
-    const controller = new MediaController(this.index, topic, description!);
+    const controller = new MediaController(this.index, topic, description);
 
     // Prepare the prompts for selecting b-roll footage
     this.consoleLog("Obtaining b-roll keywords to search for media:");

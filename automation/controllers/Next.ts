@@ -119,7 +119,8 @@ export class NextController {
   // ----------------------------------------------------------------------------------------------
   // After the AI suggests a topic, add it to the list of topics
   public addPost(title: string, topic: string, description: string, justification: string): number {
-    const index = this.postCtrl.addPost(title, topic, description, justification);
+    const post = {title, topic, level: this.getActiveLevel(), description, justification};
+    const index = this.postCtrl.addPost(post);
     return index;
   }
 

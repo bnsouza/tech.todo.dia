@@ -9,9 +9,9 @@ export type AudioProps = {
 // ------------------------------------------------------------------------------------------------
 
 export type Media = {
-  type: "video" | "image";
   video?: string;
   image?: string;
+  file?: string;
   duration?: number;
 };
 
@@ -31,7 +31,10 @@ export type Post = {
 
 // ------------------------------------------------------------------------------------------------
 
-export type PostSchema = {posts: Post[]; level: string};
+export type PostSchema = {
+  posts: Post[];
+  level: string;
+};
 
 // ------------------------------------------------------------------------------------------------
 
@@ -45,7 +48,9 @@ export type Script = {
 
 // ------------------------------------------------------------------------------------------------
 
-export type ScriptTexts = {[key: string]: string};
+export type ScriptTexts = {
+  [key: string]: string;
+};
 
 // ------------------------------------------------------------------------------------------------
 
@@ -58,11 +63,17 @@ export type Sequence = {
 
 // ------------------------------------------------------------------------------------------------
 
-export type Topic = {topic: string; tags: string[]};
+export type Topic = {
+  topic: string;
+  tags: string[];
+};
 
 // ------------------------------------------------------------------------------------------------
 
-export type TopicLevel = {progression: string; topics: Topic[]};
+export type TopicLevel = {
+  progression: string;
+  topics: Topic[];
+};
 
 // ------------------------------------------------------------------------------------------------
 

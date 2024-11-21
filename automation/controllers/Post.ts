@@ -49,8 +49,7 @@ export class PostController extends JSONController<PostSchema> {
 
   // ----------------------------------------------------------------------------------------------
   // Add a new post to the list of topics
-  public addPost(title: string, topic: string, description: string, justification: string): number {
-    const post: Post = {title, topic, level: this.level, description, justification};
+  public addPost(post: Post): number {
     this.posts.push(post);
     this.updateData();
     return this.posts.length - 1;

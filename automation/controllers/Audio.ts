@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 // ------------------------------------------------------------------------------------------------
 
-import {createWriteStream, existsSync, mkdirSync} from "fs";
+import {createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync} from "fs";
 import {createReadStream} from "node:fs";
 import * as path from "path";
 import {pipeline, Readable} from "stream";
@@ -53,6 +53,9 @@ export class AudioController {
       const filePath = path.join(audioDir, `/${key}.mp3`);
       await this.saveFile(audio, filePath);
 
+      // Call Whisper to get timestamps for captions
+      await this.callWhisper(key, filePath);
+
       audioScript[key] = {
         text: script[key],
         audio: path.relative(path.join(audioDir, "../../.."), filePath),
@@ -61,6 +64,26 @@ export class AudioController {
     }
 
     return audioScript;
+  }
+
+  // ----------------------------------------------------------------------------------------------
+  // Get the duration in frames for the given audio file
+  private async callWhisper(key: string, filePath: string): Promise<any> {
+    // Read the audio file and transform it into base64
+    const audioBuffer = readFileSync(filePath);
+    const base64 = audioBuffer.toString("base64");
+    console.log("base64:", base64);
+
+    const resp = await fetch(`https://${process.env.BASETEN_MODEL}.api.baseten.co/${process.env.BASETEN_ENV}/predict`, {
+      method: "POST",
+      headers: {Authorization: `Api-Key ${process.env.BASETEN_API_KEY}`},
+      body: JSON.stringify({audio: base64}),
+    });
+
+    const data = await resp.json();
+    console.log("Whisper Response", data);
+
+    writeFileSync(path.join(__dirname, `../../public/audio/${this.index}/${key}.json`), data);
   }
 
   // ----------------------------------------------------------------------------------------------

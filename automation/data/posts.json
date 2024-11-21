@@ -4,6 +4,7 @@
     {
       "title": "Operações Lógicas Básicas",
       "topic": "Logical Operators",
+      "level": "1 - Basic",
       "description": "Explore como as operações lógicas formam a base do pensamento computacional, incluindo exemplos simples como AND, OR e NOT.",
       "justification": "Escolhi 'Operações Lógicas' porque é um conceito fundamental que ajuda a entender como os computadores processam decisões simples, construindo diretamente sobre a compreensão de operações básicas de I/O e componentes de hardware. Este tópico é mais apropriado para o nível básico em comparação com outros mais complexos como 'Programação' ou 'Software', e é essencial antes de avançar para programação mais detalhada. Além disso, operações lógicas são visuais e interativas, o que pode ser muito envolvente para iniciantes.",
       "script": {
@@ -37,6 +38,7 @@
     {
       "title": "Entendendo Bits e Bytes",
       "topic": "Bit",
+      "level": "1 - Basic",
       "description": "Neste vídeo, exploraremos o que são bits e como eles se combinam para formar bytes, a base da computação digital. Aprenderemos como essas pequenas unidades de dados representam informações e como são fundamentais para entender o funcionamento dos computadores.",
       "justification": "O tópico 'Bit' é ideal para seguir a progressão de conceitos tangíveis como componentes de hardware e unidades básicas de dados. Ele é fundamental para construir uma compreensão básica de como os dados são processados e armazenados em dispositivos digitais, servindo como alicerce para temas mais complexos no futuro. Além disso, é um conceito que captura a curiosidade dos iniciantes, pois desvenda a magia por trás de toda a tecnologia digital que usamos no dia a dia.",
       "script": {
@@ -70,6 +72,7 @@
     {
       "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
       "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "level": "1 - Basic",
       "description": "Este vídeo abordará os componentes essenciais de hardware que os usuários interagem diariamente: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador, proporcionando uma base sólida para entender a interação humano-computador.",
       "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se alinha perfeitamente com o nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para conceitos computacionais mais complexos, como I/O (Input and Output), que poderiam ser explorados em vídeos futuros. Além disso, ao focar em dispositivos que os espectadores usam todos os dias, o vídeo tem um alto potencial de engajamento, tornando os conceitos mais acessíveis e interessantes para um público iniciante.",
       "script": {
@@ -103,6 +106,7 @@
     {
       "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
       "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "level": "1 - Basic",
       "description": "Este vídeo abordará os componentes básicos de hardware que são essenciais para a interação com computadores: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador.",
       "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se encaixa perfeitamente no nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para entender como os usuários interagem com os computadores, o que é crucial antes de avançar para conceitos mais abstratos como sistemas numéricos ou operações lógicas. Além disso, é um tópico visualmente atraente e facilmente compreensível, o que pode aumentar o engajamento do público iniciante.",
       "script": {
@@ -136,6 +140,7 @@
     {
       "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
       "topic": "Peripherals (Keyboard, Mouse, Monitor)",
+      "level": "1 - Basic",
       "description": "Neste vídeo, exploraremos os periféricos básicos de um computador: teclado, mouse e monitor. Vamos entender como cada um funciona, sua importância no uso diário do computador e como eles se conectam e interagem com o sistema central.",
       "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e facilmente compreensível para iniciantes, alinhando-se com o objetivo de construir conhecimento fundamental. Este tópico permite aos espectadores relacionar-se imediatamente com objetos que eles usam diariamente, aumentando o engajamento. Comparado a conceitos mais abstratos como 'Lógica de Programação' ou 'Sistemas Numéricos', periféricos oferecem uma base concreta e visual, facilitando a aprendizagem inicial e preparando o terreno para conceitos computacionais mais complexos posteriormente.",
       "script": {
@@ -168,6 +173,359 @@
           "audio": "public/audio/004/engagement.mp3",
           "duration": 124,
           "media": []
+        }
+      }
+    },
+    {
+      "title": "Introdução ao I/O (Entrada e Saída)",
+      "topic": "I/O (Input and Output)",
+      "level": "1 - Basic",
+      "description": "Este vídeo explicará o conceito básico de I/O (Entrada e Saída) em computação, destacando como os computadores recebem dados (entrada) através de dispositivos como teclados e mouses, e como eles emitem dados (saída) através de dispositivos como monitores e impressoras. O vídeo também abordará exemplos simples de como essas operações são fundamentais para a funcionalidade dos computadores.",
+      "justification": "A escolha do tema 'I/O (Input and Output)' segue logicamente a introdução de periféricos, já que esses são os principais exemplos de dispositivos de entrada e saída. Este tópico é essencial para entender como os computadores interagem com o mundo externo e processam informações, formando uma base sólida para conceitos mais complexos no futuro. Além disso, é um conceito que pode ser facilmente visualizado e compreendido por iniciantes, aumentando o engajamento do público.",
+      "script": {
+        "hook": {
+          "text": "Já parou para pensar como seu computador sabe o que você quer que ele faça?",
+          "audio": "public/audio/005/hook.mp3",
+          "duration": 105,
+          "media": []
+        },
+        "intro": {
+          "text": "Hoje vamos desvendar o mundo do I/O, ou seja, Entrada e Saída, que é fundamental para a comunicação entre você e seu dispositivo!",
+          "audio": "public/audio/005/intro.mp3",
+          "duration": 237,
+          "media": []
+        },
+        "explanation": {
+          "text": "I/O é o processo pelo qual um computador recebe informações do mundo externo (entrada) e envia respostas de volta (saída). Isso acontece através de dispositivos como teclado, mouse, tela e impressora, permitindo que interajamos e recebamos feedback do nosso computador.",
+          "audio": "public/audio/005/explanation.mp3",
+          "duration": 505,
+          "media": []
+        },
+        "example": {
+          "text": "Imagine que você está digitando um texto. Cada tecla que você pressiona é uma 'entrada'. O computador processa essa informação e exibe as letras na tela, isso é a 'saída'. Simples, né?",
+          "audio": "public/audio/005/example.mp3",
+          "duration": 326,
+          "media": []
+        },
+        "engagement": {
+          "text": "E aí, qual dispositivo de entrada você mais usa no seu dia a dia? Compartilhe nos comentários!",
+          "audio": "public/audio/005/engagement.mp3",
+          "duration": 137,
+          "media": []
+        }
+      }
+    },
+    {
+      "title": "Introducing Byte",
+      "topic": "Byte",
+      "level": "1 - Basic",
+      "description": "Explore the concept of a Byte, a fundamental unit of digital data storage, building on the previously discussed topic of a Bit. Understand how 8 bits make up a byte and why bytes are essential in computing for storing and processing information.",
+      "justification": "Choosing 'Byte' as the next topic aligns perfectly with the current level of foundational knowledge, building directly on the concept of a Bit, which has already been covered. It's a logical next step in understanding data units in computing, essential for beginners to grasp before moving on to more complex data structures or programming concepts. This topic is likely to engage beginners as it continues to demystify how basic data is structured and used in computers, making it more tangible and relatable than more abstract concepts like 'Programming Languages' or 'Software' at this stage.",
+      "script": {
+        "hook": {
+          "text": "Você sabia que um simples byte pode ser a chave para entender a computação?",
+          "audio": "public/audio/006/hook.mp3",
+          "duration": 100,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
+              "duration": 29.969999313354492
+            }
+          ]
+        },
+        "intro": {
+          "text": "Um byte não é apenas um conjunto de bits; é o coração da linguagem dos computadores. Vamos desvendar esse mistério!",
+          "audio": "public/audio/006/intro.mp3",
+          "duration": 173,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
+              "duration": 29.969999313354492
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
+              "duration": 30
+            }
+          ]
+        },
+        "explanation": {
+          "text": "Um byte é composto por 8 bits e cada bit pode ser 0 ou 1. Essa combinação de bits permite representar números, letras e outros símbolos. É assim que, por exemplo, o computador transforma o que digitamos em algo que ele pode processar e entender.",
+          "audio": "public/audio/006/explanation.mp3",
+          "duration": 434,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/3195532/3195532-uhd_2560_1440_25fps.mp4",
+              "duration": 25
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
+              "duration": 30
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/5473792/5473792-hd_2048_1080_25fps.mp4",
+              "duration": 25
+            }
+          ]
+        },
+        "example": {
+          "text": "Imagine que cada bit é uma lâmpada, que pode estar ligada ou desligada. Com 8 lâmpadas, você pode criar 256 combinações diferentes! Isso significa que um byte pode representar 256 possíveis valores, desde letras até números.",
+          "audio": "public/audio/006/example.mp3",
+          "duration": 469,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
+              "duration": 29.969999313354492
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
+              "duration": 30
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/853772/853772-hd_1920_1080_25fps.mp4",
+              "duration": 25
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
+              "duration": 29.969999313354492
+            }
+          ]
+        },
+        "engagement": {
+          "text": "E aí, você já tinha parado para pensar na importância de um byte no seu dia a dia? Comente abaixo como você usa essa informação na prática!",
+          "audio": "public/audio/006/engagement.mp3",
+          "duration": 216,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
+              "duration": 29.969999313354492
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4053228/4053228-hd_1920_1080_25fps.mp4",
+              "duration": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Introdução aos Tipos de Dados",
+      "topic": "Data Types",
+      "description": "Este vídeo explicará o que são tipos de dados em programação, destacando exemplos comuns como inteiros, caracteres e booleanos. Será uma introdução básica para entender como os dados são categorizados e manipulados em programas de computador.",
+      "justification": "Escolhi 'Data Types' porque é um conceito fundamental que constrói diretamente sobre a compreensão de unidades básicas de dados como bits e bytes, já abordados anteriormente. Este tópico é essencial antes de avançar para conceitos mais complexos de programação e é altamente relevante e engajador para iniciantes que estão aprendendo como os computadores processam informações.",
+      "script": {
+        "hook": {
+          "text": "Já pensou em como os dados são fundamentais na programação? Vamos desvendar os tipos de dados!",
+          "audio": "public/audio/007/hook.mp3",
+          "duration": 141,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_3840_2160_30fps.mp4",
+              "duration": 600
+            }
+          ]
+        },
+        "intro": {
+          "text": "Os tipos de dados são como os tijolos da construção de um software. Sem eles, não conseguiríamos organizar e processar as informações de forma eficaz.",
+          "audio": "public/audio/007/intro.mp3",
+          "duration": 240,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/7989667/7989667-hd_1080_1920_25fps.mp4",
+              "duration": 350
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29458457/12680994_1920_1080_25fps.mp4",
+              "duration": 250
+            }
+          ]
+        },
+        "explanation": {
+          "text": "Cada tipo de dado tem um papel único. Por exemplo, números inteiros para contar, strings para textos, e booleanos para decisões de sim ou não. Eles ajudam a definir o que você pode fazer com seus dados e como você pode interagir com eles.",
+          "audio": "public/audio/007/explanation.mp3",
+          "duration": 439,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4629779/4629779-uhd_3840_2160_25fps.mp4",
+              "duration": 375
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4",
+              "duration": 629.3699855804443
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4",
+              "duration": 300
+            }
+          ]
+        },
+        "example": {
+          "text": "Imagine que você está organizando uma biblioteca. Os livros são como strings, os números de páginas são inteiros, e se o livro está disponível ou não, isso é um booleano. Cada informação é armazenada de acordo com seu tipo de dado!",
+          "audio": "public/audio/007/example.mp3",
+          "duration": 394,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/6214946/6214946-uhd_4096_2160_25fps.mp4",
+              "duration": 775
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29460356/12681485_2560_1440_30fps.mp4",
+              "duration": 599.3999862670898
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/8327799/8327799-uhd_3840_2160_25fps.mp4",
+              "duration": 400
+            }
+          ]
+        },
+        "engagement": {
+          "text": "E aí, qual tipo de dado você mais usa no seu dia a dia de programação? Compartilhe nos comentários!",
+          "audio": "public/audio/007/engagement.mp3",
+          "duration": 127,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/5377277/5377277-uhd_1440_2560_25fps.mp4",
+              "duration": 400
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Sugestão de Tópico para Vídeo",
+      "topic": "Numerical Systems (Binary, Octal, Decimal, Hexadecimal)",
+      "level": "1 - Basic",
+      "description": "Introdução aos Sistemas Numéricos (Binário, Octal, Decimal, Hexadecimal)",
+      "justification": "Após cobrir conceitos básicos de hardware e unidades de dados como bit e byte, a introdução aos sistemas numéricos é uma progressão natural. Este tópico é fundamental para entender como os dados são representados e processados em computadores. Além disso, é um conceito que pode ser visualmente atraente e intrigante para iniciantes, facilitando o engajamento. Comparado a outros tópicos como 'Loop' ou 'Variable', que são mais avançados e dependem de uma compreensão prévia de programação, os sistemas numéricos são mais acessíveis neste estágio."
+    },
+    {
+      "title": "Introdução aos Tipos de Dados",
+      "topic": "Data Types",
+      "level": "1 - Basic",
+      "description": "Este vídeo explicará o que são tipos de dados em programação, destacando os tipos básicos como inteiros, caracteres e booleanos. Será abordado como diferentes tipos de dados são usados para representar diferentes formas de informação em um computador.",
+      "justification": "Escolhi 'Tipos de Dados' porque é um conceito fundamental que constrói diretamente sobre o entendimento de unidades básicas de dados como bits e bytes, já abordados anteriormente. Este tópico é essencial antes de avançar para conceitos mais complexos como variáveis e funções. Além disso, é um conceito que pode ser visualmente representado e facilmente compreendido por iniciantes, o que aumenta o engajamento do público.",
+      "script": {
+        "hook": {
+          "text": "Você sabia que os tipos de dados são a espinha dorsal de qualquer programa? Vamos desvendar esse mistério!",
+          "audio": "public/audio/009/hook.mp3",
+          "duration": 161,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/7989667/7989667-hd_1080_1920_25fps.mp4",
+              "duration": 350,
+              "file": "public/media/009/hook/7989667-hd_1080_1920_25fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_3840_2160_30fps.mp4",
+              "duration": 600,
+              "file": "public/media/009/hook/3130284-uhd_3840_2160_30fps.mp4"
+            }
+          ]
+        },
+        "intro": {
+          "text": "Tipos de dados são como ingredientes em uma receita: cada um tem sua função e importância. Sem eles, programar seria como cozinhar sem saber o que está usando!",
+          "audio": "public/audio/009/intro.mp3",
+          "duration": 247,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/4629779/4629779-uhd_3840_2160_25fps.mp4",
+              "duration": 375,
+              "file": "public/media/009/intro/4629779-uhd_3840_2160_25fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/29458457/12680994_1920_1080_25fps.mp4",
+              "duration": 250,
+              "file": "public/media/009/intro/12680994_1920_1080_25fps.mp4"
+            }
+          ]
+        },
+        "explanation": {
+          "text": "Em programação, tipos de dados definem o que você pode fazer com as variáveis. Por exemplo, números para cálculos, textos para mensagens, e muito mais. Eles ajudam a organizar e processar informações de forma eficiente.",
+          "audio": "public/audio/009/explanation.mp3",
+          "duration": 355,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/7534244/7534244-hd_1920_1080_25fps.mp4",
+              "duration": 300,
+              "file": "public/media/009/explanation/7534244-hd_1920_1080_25fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4",
+              "duration": 629,
+              "file": "public/media/009/explanation/5495781-uhd_2560_1080_30fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/6238188/6238188-hd_1920_1080_30fps.mp4",
+              "duration": 480,
+              "file": "public/media/009/explanation/6238188-hd_1920_1080_30fps.mp4"
+            }
+          ]
+        },
+        "example": {
+          "text": "Imagine que você está organizando uma festa e precisa listar os convidados e a quantidade de comida. Os nomes são dados do tipo texto e as quantidades, números. Essa organização facilita muito na hora de preparar tudo!",
+          "audio": "public/audio/009/example.mp3",
+          "duration": 399,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/27650713/12194945_1920_1080_30fps.mp4",
+              "duration": 300,
+              "file": "public/media/009/example/12194945_1920_1080_30fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/5495890/5495890-hd_1080_1920_30fps.mp4",
+              "duration": 329,
+              "file": "public/media/009/example/5495890-hd_1080_1920_30fps.mp4"
+            },
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/6266247/6266247-uhd_2560_1440_25fps.mp4",
+              "duration": 425,
+              "file": "public/media/009/example/6266247-uhd_2560_1440_25fps.mp4"
+            }
+          ]
+        },
+        "engagement": {
+          "text": "E aí, qual tipo de dado você mais usa nos seus programas? Compartilha com a gente nos comentários!",
+          "audio": "public/audio/009/engagement.mp3",
+          "duration": 121,
+          "media": [
+            {
+              "type": "video",
+              "video": "https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4",
+              "duration": 1648,
+              "file": "public/media/009/engagement/2278095-hd_1920_1080_30fps.mp4"
+            }
+          ]
         }
       }
     }

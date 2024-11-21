@@ -60,14 +60,18 @@ class Model:
                 word_timestamps=True,
             )
 
-            # for seg in segments:
-            #     result_segments.append(
-            #         {"text": seg.text, "start": seg.start, "end": seg.end}
-            #     )
+            for segment in segments:
+                for word in segment.words:
+                    result_segments.append(
+                        {
+                            "text": word.word,
+                            "startMs": word.start,
+                            "endMs": word.end,
+                        }
+                    )
 
         return {
             "language": info.language,
-            "language_probability": info.language_probability,
             "duration": info.duration,
-            "segments": segments,
+            "segments": result_segments,
         }
