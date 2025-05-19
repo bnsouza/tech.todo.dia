@@ -2,528 +2,2528 @@
   "level": "1 - Basic",
   "posts": [
     {
-      "title": "Operações Lógicas Básicas",
-      "topic": "Logical Operators",
-      "level": "1 - Basic",
-      "description": "Explore como as operações lógicas formam a base do pensamento computacional, incluindo exemplos simples como AND, OR e NOT.",
-      "justification": "Escolhi 'Operações Lógicas' porque é um conceito fundamental que ajuda a entender como os computadores processam decisões simples, construindo diretamente sobre a compreensão de operações básicas de I/O e componentes de hardware. Este tópico é mais apropriado para o nível básico em comparação com outros mais complexos como 'Programação' ou 'Software', e é essencial antes de avançar para programação mais detalhada. Além disso, operações lógicas são visuais e interativas, o que pode ser muito envolvente para iniciantes.",
-      "script": {
-        "hook": {
-          "text": "Quer tomar decisões mais inteligentes na programação? Vamos desvendar os operadores lógicos!",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/hook.mp3",
-          "duration": 0
-        },
-        "intro": {
-          "text": "No mundo da programação, os operadores lógicos são como os super-heróis das decisões. Eles ajudam a decidir entre o 'sim' e o 'não', ou entre o 'verdadeiro' e o 'falso'.",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/intro.mp3",
-          "duration": 0
-        },
-        "explanation": {
-          "text": "Os operadores lógicos mais comuns são o AND (E), OR (OU) e NOT (NÃO). O AND só retorna verdadeiro se todas as condições forem verdadeiras. O OR retorna verdadeiro se pelo menos uma condição for verdadeira. Já o NOT inverte o resultado: se era verdadeiro, fica falso, e vice-versa. Esses operadores são fundamentais para controlar o fluxo de decisões em um programa.",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/explanation.mp3",
-          "duration": 0
-        },
-        "example": {
-          "text": "Imagine que você está programando um jogo e quer verificar se um jogador pode avançar para a próxima fase. Ele precisa ter mais de 100 pontos E menos de 3 vidas perdidas. Aqui, usamos o operador AND para garantir que ambas as condições sejam verdadeiras antes de permitir que ele avance.",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/example.mp3",
-          "duration": 0
-        },
-        "engagement": {
-          "text": "E você, já usou operadores lógicos em algum projeto? Compartilhe como eles ajudaram a tomar decisões no seu código nos comentários abaixo!",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/engagement.mp3",
-          "duration": 0
-        }
-      }
-    },
-    {
-      "title": "Entendendo Bits e Bytes",
+      "title": "Bit: A Unidade Básica de Informação",
       "topic": "Bit",
       "level": "1 - Basic",
-      "description": "Neste vídeo, exploraremos o que são bits e como eles se combinam para formar bytes, a base da computação digital. Aprenderemos como essas pequenas unidades de dados representam informações e como são fundamentais para entender o funcionamento dos computadores.",
-      "justification": "O tópico 'Bit' é ideal para seguir a progressão de conceitos tangíveis como componentes de hardware e unidades básicas de dados. Ele é fundamental para construir uma compreensão básica de como os dados são processados e armazenados em dispositivos digitais, servindo como alicerce para temas mais complexos no futuro. Além disso, é um conceito que captura a curiosidade dos iniciantes, pois desvenda a magia por trás de toda a tecnologia digital que usamos no dia a dia.",
+      "description": "Neste vídeo, vamos explorar o conceito de 'bit', a menor unidade de informação em computação. Vamos entender como os bits são usados para representar dados e como eles formam a base de toda a tecnologia digital.",
+      "justification": "Escolhi o tema 'Bit' porque é a unidade fundamental de informação em computação, essencial para entender conceitos mais complexos. Começar com 'Bit' permite que os iniciantes construam uma base sólida antes de avançar para tópicos como 'Byte', 'Numerical Systems' e 'Logical Operators'. Além disso, é um conceito tangível e fácil de visualizar, o que ajuda a engajar o público iniciante.",
       "script": {
         "hook": {
-          "text": "Você sabia que um simples bit pode ser a chave para entender a tecnologia moderna?",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/hook.mp3",
-          "duration": 108
-        },
-        "intro": {
-          "text": "Hoje vamos desvendar o que é um bit, a menor unidade de dados em computação, e por que ele é tão fundamental!",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/intro.mp3",
-          "duration": 177
-        },
-        "explanation": {
-          "text": "Imagine o bit como um interruptor de luz, que pode estar ligado ou desligado. No mundo digital, isso se traduz em 0 e 1. Cada bit representa uma escolha entre duas possibilidades, e é essa simplicidade que permite construir sistemas complexos a partir deles.",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/explanation.mp3",
-          "duration": 501
-        },
-        "example": {
-          "text": "Pense em como você forma palavras usando letras. No computador, bits são usados de forma semelhante para criar tudo, desde textos em um documento até imagens e vídeos. Por exemplo, um byte, que são 8 bits juntos, pode representar até 256 possibilidades diferentes!",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/example.mp3",
-          "duration": 474
-        },
-        "engagement": {
-          "text": "E aí, você já tinha imaginado que algo tão pequeno como um bit poderia fazer tanto? Comente abaixo como você vê os bits impactando sua vida diária!",
-          "audio": "/Users/bnsouza/Sites/tech.todo.dia/public/audio/001/engagement.mp3",
-          "duration": 240
-        }
-      }
-    },
-    {
-      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
-      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
-      "level": "1 - Basic",
-      "description": "Este vídeo abordará os componentes essenciais de hardware que os usuários interagem diariamente: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador, proporcionando uma base sólida para entender a interação humano-computador.",
-      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se alinha perfeitamente com o nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para conceitos computacionais mais complexos, como I/O (Input and Output), que poderiam ser explorados em vídeos futuros. Além disso, ao focar em dispositivos que os espectadores usam todos os dias, o vídeo tem um alto potencial de engajamento, tornando os conceitos mais acessíveis e interessantes para um público iniciante.",
-      "script": {
-        "hook": {
-          "text": "Já pensou como os periféricos certos podem transformar sua experiência no computador?",
-          "audio": "public/audio/002/hook.mp3",
-          "duration": 110
-        },
-        "intro": {
-          "text": "Periféricos como teclado, mouse e monitor são os super-heróis do nosso setup de computador. Vamos descobrir como eles fazem toda a diferença!",
-          "audio": "public/audio/002/intro.mp3",
-          "duration": 244
-        },
-        "explanation": {
-          "text": "Cada periférico tem um papel crucial: o teclado permite uma digitação rápida e eficiente, o mouse garante precisão nos cliques e o monitor exibe as informações com clareza. Juntos, eles otimizam nossa interação com o mundo digital, seja para trabalhar, estudar ou jogar.",
-          "audio": "public/audio/002/explanation.mp3",
-          "duration": 493
-        },
-        "example": {
-          "text": "Imagine que você está jogando um jogo competitivo. Com um mouse de alta precisão, seus movimentos são mais rápidos e precisos. Um teclado responsivo evita atrasos nas suas ações, e um monitor com boa resolução te dá uma visão clara do jogo, aumentando suas chances de vitória.",
-          "audio": "public/audio/002/example.mp3",
-          "duration": 473
-        },
-        "engagement": {
-          "text": "E aí, qual periférico faz mais diferença no seu dia a dia? Compartilhe nos comentários!",
-          "audio": "public/audio/002/engagement.mp3",
-          "duration": 127
-        }
-      }
-    },
-    {
-      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
-      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
-      "level": "1 - Basic",
-      "description": "Este vídeo abordará os componentes básicos de hardware que são essenciais para a interação com computadores: o teclado, o mouse e o monitor. Explicaremos como cada periférico funciona e sua importância no uso diário de um computador.",
-      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e fundamental que se encaixa perfeitamente no nível básico de conhecimento tecnológico. Este tópico constrói uma base sólida para entender como os usuários interagem com os computadores, o que é crucial antes de avançar para conceitos mais abstratos como sistemas numéricos ou operações lógicas. Além disso, é um tópico visualmente atraente e facilmente compreensível, o que pode aumentar o engajamento do público iniciante.",
-      "script": {
-        "hook": {
-          "text": "Já pensou como os periféricos podem transformar sua experiência com o computador?",
-          "audio": "public/audio/003/hook.mp3",
-          "duration": 100
-        },
-        "intro": {
-          "text": "Periféricos como teclado, mouse e monitor não são apenas acessórios, são as ferramentas que conectam você ao mundo digital.",
-          "audio": "public/audio/003/intro.mp3",
-          "duration": 182
-        },
-        "explanation": {
-          "text": "Cada periférico tem um papel crucial: o teclado permite a entrada de texto, o mouse facilita a navegação e o monitor é a janela para o universo virtual. Juntos, eles definem a eficiência e o conforto da sua interação com o computador.",
-          "audio": "public/audio/003/explanation.mp3",
-          "duration": 394
-        },
-        "example": {
-          "text": "Imagine jogar um videogame com um mouse lento ou trabalhar em um monitor com baixa resolução. Frustrante, né? Agora, pense no impacto de um teclado ergonômico e um monitor de alta definição em sua produtividade e diversão!",
-          "audio": "public/audio/003/example.mp3",
-          "duration": 370
-        },
-        "engagement": {
-          "text": "E você, qual periférico não pode faltar na sua configuração? Compartilhe nos comentários!",
-          "audio": "public/audio/003/engagement.mp3",
-          "duration": 135
-        }
-      }
-    },
-    {
-      "title": "Introdução aos Periféricos: Teclado, Mouse e Monitor",
-      "topic": "Peripherals (Keyboard, Mouse, Monitor)",
-      "level": "1 - Basic",
-      "description": "Neste vídeo, exploraremos os periféricos básicos de um computador: teclado, mouse e monitor. Vamos entender como cada um funciona, sua importância no uso diário do computador e como eles se conectam e interagem com o sistema central.",
-      "justification": "Escolhi 'Periféricos (Teclado, Mouse, Monitor)' porque é um tópico tangível e facilmente compreensível para iniciantes, alinhando-se com o objetivo de construir conhecimento fundamental. Este tópico permite aos espectadores relacionar-se imediatamente com objetos que eles usam diariamente, aumentando o engajamento. Comparado a conceitos mais abstratos como 'Lógica de Programação' ou 'Sistemas Numéricos', periféricos oferecem uma base concreta e visual, facilitando a aprendizagem inicial e preparando o terreno para conceitos computacionais mais complexos posteriormente.",
-      "script": {
-        "hook": {
-          "text": "Já pensou como os periféricos transformam sua experiência com o computador?",
-          "audio": "public/audio/004/hook.mp3",
-          "duration": 91,
-          "media": []
-        },
-        "intro": {
-          "text": "Periféricos como teclado, mouse e monitor não são apenas acessórios, são as ferramentas que nos conectam ao mundo digital!",
-          "audio": "public/audio/004/intro.mp3",
-          "duration": 187,
-          "media": []
-        },
-        "explanation": {
-          "text": "Cada periférico tem um papel crucial: o teclado permite a entrada de texto, o mouse facilita a navegação e o monitor é a janela para o universo digital. Juntos, eles otimizam nossa interação com o computador, tornando-a mais rápida, eficiente e confortável.",
-          "audio": "public/audio/004/explanation.mp3",
-          "duration": 495,
-          "media": []
-        },
-        "example": {
-          "text": "Imagine jogar um videogame sem um bom monitor ou editar um documento sem um teclado adequado. Difícil, né? Esses periféricos não só facilitam essas tarefas, mas também as tornam possíveis!",
-          "audio": "public/audio/004/example.mp3",
-          "duration": 348,
-          "media": []
-        },
-        "engagement": {
-          "text": "E você, qual periférico não pode faltar na sua configuração? Compartilhe nos comentários!",
-          "audio": "public/audio/004/engagement.mp3",
-          "duration": 124,
-          "media": []
-        }
-      }
-    },
-    {
-      "title": "Introdução ao I/O (Entrada e Saída)",
-      "topic": "I/O (Input and Output)",
-      "level": "1 - Basic",
-      "description": "Este vídeo explicará o conceito básico de I/O (Entrada e Saída) em computação, destacando como os computadores recebem dados (entrada) através de dispositivos como teclados e mouses, e como eles emitem dados (saída) através de dispositivos como monitores e impressoras. O vídeo também abordará exemplos simples de como essas operações são fundamentais para a funcionalidade dos computadores.",
-      "justification": "A escolha do tema 'I/O (Input and Output)' segue logicamente a introdução de periféricos, já que esses são os principais exemplos de dispositivos de entrada e saída. Este tópico é essencial para entender como os computadores interagem com o mundo externo e processam informações, formando uma base sólida para conceitos mais complexos no futuro. Além disso, é um conceito que pode ser facilmente visualizado e compreendido por iniciantes, aumentando o engajamento do público.",
-      "script": {
-        "hook": {
-          "text": "Já parou para pensar como seu computador sabe o que você quer que ele faça?",
-          "audio": "public/audio/005/hook.mp3",
-          "duration": 105,
-          "media": []
-        },
-        "intro": {
-          "text": "Hoje vamos desvendar o mundo do I/O, ou seja, Entrada e Saída, que é fundamental para a comunicação entre você e seu dispositivo!",
-          "audio": "public/audio/005/intro.mp3",
-          "duration": 237,
-          "media": []
-        },
-        "explanation": {
-          "text": "I/O é o processo pelo qual um computador recebe informações do mundo externo (entrada) e envia respostas de volta (saída). Isso acontece através de dispositivos como teclado, mouse, tela e impressora, permitindo que interajamos e recebamos feedback do nosso computador.",
-          "audio": "public/audio/005/explanation.mp3",
-          "duration": 505,
-          "media": []
-        },
-        "example": {
-          "text": "Imagine que você está digitando um texto. Cada tecla que você pressiona é uma 'entrada'. O computador processa essa informação e exibe as letras na tela, isso é a 'saída'. Simples, né?",
-          "audio": "public/audio/005/example.mp3",
-          "duration": 326,
-          "media": []
-        },
-        "engagement": {
-          "text": "E aí, qual dispositivo de entrada você mais usa no seu dia a dia? Compartilhe nos comentários!",
-          "audio": "public/audio/005/engagement.mp3",
-          "duration": 137,
-          "media": []
-        }
-      }
-    },
-    {
-      "title": "Introducing Byte",
-      "topic": "Byte",
-      "level": "1 - Basic",
-      "description": "Explore the concept of a Byte, a fundamental unit of digital data storage, building on the previously discussed topic of a Bit. Understand how 8 bits make up a byte and why bytes are essential in computing for storing and processing information.",
-      "justification": "Choosing 'Byte' as the next topic aligns perfectly with the current level of foundational knowledge, building directly on the concept of a Bit, which has already been covered. It's a logical next step in understanding data units in computing, essential for beginners to grasp before moving on to more complex data structures or programming concepts. This topic is likely to engage beginners as it continues to demystify how basic data is structured and used in computers, making it more tangible and relatable than more abstract concepts like 'Programming Languages' or 'Software' at this stage.",
-      "script": {
-        "hook": {
-          "text": "Você sabia que um simples byte pode ser a chave para entender a computação?",
-          "audio": "public/audio/006/hook.mp3",
-          "duration": 100,
-          "media": [
+          "text": "Você já se perguntou como a internet entende tudo em zeros e uns?",
+          "audio": "audio/000/hook.mp3",
+          "segments": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
-              "duration": 29.969999313354492
+              "text": " Você",
+              "startMs": 0,
+              "endMs": 0.22
+            },
+            {
+              "text": " já",
+              "startMs": 0.22,
+              "endMs": 0.34
+            },
+            {
+              "text": " se",
+              "startMs": 0.34,
+              "endMs": 0.44
+            },
+            {
+              "text": " perguntou",
+              "startMs": 0.44,
+              "endMs": 0.9
+            },
+            {
+              "text": " como",
+              "startMs": 0.9,
+              "endMs": 1.04
+            },
+            {
+              "text": " a",
+              "startMs": 1.04,
+              "endMs": 1.14
+            },
+            {
+              "text": " internet",
+              "startMs": 1.14,
+              "endMs": 1.38
+            },
+            {
+              "text": " entende",
+              "startMs": 1.38,
+              "endMs": 2
+            },
+            {
+              "text": " tudo",
+              "startMs": 2,
+              "endMs": 2.2
+            },
+            {
+              "text": " em",
+              "startMs": 2.2,
+              "endMs": 2.4
+            },
+            {
+              "text": " zeros",
+              "startMs": 2.4,
+              "endMs": 2.66
+            },
+            {
+              "text": " e",
+              "startMs": 2.66,
+              "endMs": 2.84
+            },
+            {
+              "text": " uns?",
+              "startMs": 2.84,
+              "endMs": 3.02
             }
-          ]
-        },
-        "intro": {
-          "text": "Um byte não é apenas um conjunto de bits; é o coração da linguagem dos computadores. Vamos desvendar esse mistério!",
-          "audio": "public/audio/006/intro.mp3",
-          "duration": 173,
+          ],
+          "duration": 86,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
-              "duration": 29.969999313354492
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
-              "duration": 30
-            }
-          ]
-        },
-        "explanation": {
-          "text": "Um byte é composto por 8 bits e cada bit pode ser 0 ou 1. Essa combinação de bits permite representar números, letras e outros símbolos. É assim que, por exemplo, o computador transforma o que digitamos em algo que ele pode processar e entender.",
-          "audio": "public/audio/006/explanation.mp3",
-          "duration": 434,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/3195532/3195532-uhd_2560_1440_25fps.mp4",
-              "duration": 25
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
-              "duration": 30
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/5473792/5473792-hd_2048_1080_25fps.mp4",
-              "duration": 25
-            }
-          ]
-        },
-        "example": {
-          "text": "Imagine que cada bit é uma lâmpada, que pode estar ligada ou desligada. Com 8 lâmpadas, você pode criar 256 combinações diferentes! Isso significa que um byte pode representar 256 possíveis valores, desde letras até números.",
-          "audio": "public/audio/006/example.mp3",
-          "duration": 469,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
-              "duration": 29.969999313354492
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4990233/4990233-hd_1280_720_30fps.mp4",
-              "duration": 30
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/853772/853772-hd_1920_1080_25fps.mp4",
-              "duration": 25
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
-              "duration": 29.969999313354492
-            }
-          ]
-        },
-        "engagement": {
-          "text": "E aí, você já tinha parado para pensar na importância de um byte no seu dia a dia? Comente abaixo como você usa essa informação na prática!",
-          "audio": "public/audio/006/engagement.mp3",
-          "duration": 216,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681483_1280_720_30fps.mp4",
-              "duration": 29.969999313354492
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4053228/4053228-hd_1920_1080_25fps.mp4",
-              "duration": 25
-            }
-          ]
-        }
-      }
-    },
-    {
-      "title": "Introdução aos Tipos de Dados",
-      "topic": "Data Types",
-      "description": "Este vídeo explicará o que são tipos de dados em programação, destacando exemplos comuns como inteiros, caracteres e booleanos. Será uma introdução básica para entender como os dados são categorizados e manipulados em programas de computador.",
-      "justification": "Escolhi 'Data Types' porque é um conceito fundamental que constrói diretamente sobre a compreensão de unidades básicas de dados como bits e bytes, já abordados anteriormente. Este tópico é essencial antes de avançar para conceitos mais complexos de programação e é altamente relevante e engajador para iniciantes que estão aprendendo como os computadores processam informações.",
-      "script": {
-        "hook": {
-          "text": "Já pensou em como os dados são fundamentais na programação? Vamos desvendar os tipos de dados!",
-          "audio": "public/audio/007/hook.mp3",
-          "duration": 141,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_3840_2160_30fps.mp4",
-              "duration": 600
-            }
-          ]
-        },
-        "intro": {
-          "text": "Os tipos de dados são como os tijolos da construção de um software. Sem eles, não conseguiríamos organizar e processar as informações de forma eficaz.",
-          "audio": "public/audio/007/intro.mp3",
-          "duration": 240,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/7989667/7989667-hd_1080_1920_25fps.mp4",
-              "duration": 350
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29458457/12680994_1920_1080_25fps.mp4",
-              "duration": 250
-            }
-          ]
-        },
-        "explanation": {
-          "text": "Cada tipo de dado tem um papel único. Por exemplo, números inteiros para contar, strings para textos, e booleanos para decisões de sim ou não. Eles ajudam a definir o que você pode fazer com seus dados e como você pode interagir com eles.",
-          "audio": "public/audio/007/explanation.mp3",
-          "duration": 439,
-          "media": [
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4629779/4629779-uhd_3840_2160_25fps.mp4",
-              "duration": 375
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4",
-              "duration": 629.3699855804443
-            },
-            {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4",
+              "original": "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4",
+              "file": "media/000/hook/6963744-hd_1920_1080_25fps.mp4",
+              "width": 1920,
+              "height": 1080,
               "duration": 300
             }
           ]
         },
-        "example": {
-          "text": "Imagine que você está organizando uma biblioteca. Os livros são como strings, os números de páginas são inteiros, e se o livro está disponível ou não, isso é um booleano. Cada informação é armazenada de acordo com seu tipo de dado!",
-          "audio": "public/audio/007/example.mp3",
-          "duration": 394,
+        "intro": {
+          "text": "Hoje vamos falar sobre o bit, a menor unidade de dados em um computador. Pense nele como o interruptor de luz da tecnologia: ele pode estar ligado ou desligado, representando 1 ou 0.",
+          "audio": "audio/000/intro.mp3",
+          "segments": [
+            {
+              "text": " Hoje",
+              "startMs": 0,
+              "endMs": 0.18
+            },
+            {
+              "text": " vamos",
+              "startMs": 0.18,
+              "endMs": 0.34
+            },
+            {
+              "text": " falar",
+              "startMs": 0.34,
+              "endMs": 0.66
+            },
+            {
+              "text": " sobre",
+              "startMs": 0.66,
+              "endMs": 0.94
+            },
+            {
+              "text": " o",
+              "startMs": 0.94,
+              "endMs": 1.06
+            },
+            {
+              "text": " bit,",
+              "startMs": 1.06,
+              "endMs": 1.22
+            },
+            {
+              "text": " a",
+              "startMs": 1.4,
+              "endMs": 1.78
+            },
+            {
+              "text": " menor",
+              "startMs": 1.78,
+              "endMs": 2.04
+            },
+            {
+              "text": " unidade",
+              "startMs": 2.04,
+              "endMs": 2.6
+            },
+            {
+              "text": " de",
+              "startMs": 2.6,
+              "endMs": 2.8
+            },
+            {
+              "text": " dados",
+              "startMs": 2.8,
+              "endMs": 3.08
+            },
+            {
+              "text": " em",
+              "startMs": 3.08,
+              "endMs": 3.26
+            },
+            {
+              "text": " um",
+              "startMs": 3.26,
+              "endMs": 3.38
+            },
+            {
+              "text": " computador.",
+              "startMs": 3.38,
+              "endMs": 3.98
+            },
+            {
+              "text": " Pense",
+              "startMs": 4.44,
+              "endMs": 4.94
+            },
+            {
+              "text": " nele",
+              "startMs": 4.94,
+              "endMs": 5.26
+            },
+            {
+              "text": " como",
+              "startMs": 5.26,
+              "endMs": 5.5
+            },
+            {
+              "text": " o",
+              "startMs": 5.5,
+              "endMs": 5.68
+            },
+            {
+              "text": " interruptor",
+              "startMs": 5.68,
+              "endMs": 6.68
+            },
+            {
+              "text": " de",
+              "startMs": 6.68,
+              "endMs": 6.8
+            },
+            {
+              "text": " luz",
+              "startMs": 6.8,
+              "endMs": 7.04
+            },
+            {
+              "text": " da",
+              "startMs": 7.04,
+              "endMs": 7.22
+            },
+            {
+              "text": " tecnologia.",
+              "startMs": 7.22,
+              "endMs": 7.62
+            },
+            {
+              "text": " Ele",
+              "startMs": 8.22,
+              "endMs": 8.72
+            },
+            {
+              "text": " pode",
+              "startMs": 8.72,
+              "endMs": 8.9
+            },
+            {
+              "text": " estar",
+              "startMs": 8.9,
+              "endMs": 9.14
+            },
+            {
+              "text": " ligado",
+              "startMs": 9.14,
+              "endMs": 9.7
+            },
+            {
+              "text": " ou",
+              "startMs": 9.7,
+              "endMs": 9.92
+            },
+            {
+              "text": " desligado,",
+              "startMs": 9.92,
+              "endMs": 10.7
+            },
+            {
+              "text": " representando",
+              "startMs": 10.72,
+              "endMs": 11.7
+            },
+            {
+              "text": " 1",
+              "startMs": 11.7,
+              "endMs": 11.98
+            },
+            {
+              "text": " ou",
+              "startMs": 11.98,
+              "endMs": 12.34
+            },
+            {
+              "text": " 0.",
+              "startMs": 12.34,
+              "endMs": 12.66
+            }
+          ],
+          "duration": 319,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/6214946/6214946-uhd_4096_2160_25fps.mp4",
-              "duration": 775
+              "original": "https://videos.pexels.com/video-files/6963746/6963746-hd_1920_1080_25fps.mp4",
+              "file": "media/000/intro/6963746-hd_1920_1080_25fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 700
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29460356/12681485_2560_1440_30fps.mp4",
-              "duration": 599.3999862670898
+              "original": "https://videos.pexels.com/video-files/11041433/11041433-hd_1920_1080_30fps.mp4",
+              "file": "media/000/intro/11041433-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 330
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/8327799/8327799-uhd_3840_2160_25fps.mp4",
+              "original": "https://videos.pexels.com/video-files/6963751/6963751-hd_1920_1080_25fps.mp4",
+              "file": "media/000/intro/6963751-hd_1920_1080_25fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 425
+            }
+          ]
+        },
+        "explanation": {
+          "text": "Um bit é a base de toda a informação digital. Ele funciona como um pequeno interruptor que pode estar em um de dois estados: ligado (1) ou desligado (0). Esses estados são usados para representar dados e instruções que os computadores processam. Combinando vários bits, podemos criar bytes, kilobytes, megabytes e assim por diante, permitindo que armazenemos e transmitamos informações complexas.",
+          "audio": "audio/000/explanation.mp3",
+          "segments": [
+            {
+              "text": " 1",
+              "startMs": 0,
+              "endMs": 0.12
+            },
+            {
+              "text": "-bit",
+              "startMs": 0.12,
+              "endMs": 0.32
+            },
+            {
+              "text": " é",
+              "startMs": 0.32,
+              "endMs": 0.52
+            },
+            {
+              "text": " a",
+              "startMs": 0.52,
+              "endMs": 0.6
+            },
+            {
+              "text": " base",
+              "startMs": 0.6,
+              "endMs": 0.9
+            },
+            {
+              "text": " de",
+              "startMs": 0.9,
+              "endMs": 1.02
+            },
+            {
+              "text": " toda",
+              "startMs": 1.02,
+              "endMs": 1.3
+            },
+            {
+              "text": " a",
+              "startMs": 1.3,
+              "endMs": 1.44
+            },
+            {
+              "text": " informação",
+              "startMs": 1.44,
+              "endMs": 1.76
+            },
+            {
+              "text": " digital.",
+              "startMs": 1.76,
+              "endMs": 2.26
+            },
+            {
+              "text": " Ele",
+              "startMs": 3.0599999999999996,
+              "endMs": 3.38
+            },
+            {
+              "text": " funciona",
+              "startMs": 3.38,
+              "endMs": 3.7
+            },
+            {
+              "text": " como",
+              "startMs": 3.7,
+              "endMs": 4
+            },
+            {
+              "text": " um",
+              "startMs": 4,
+              "endMs": 4.14
+            },
+            {
+              "text": " pequeno",
+              "startMs": 4.14,
+              "endMs": 4.6
+            },
+            {
+              "text": " interruptor",
+              "startMs": 4.6,
+              "endMs": 5.26
+            },
+            {
+              "text": " que",
+              "startMs": 5.26,
+              "endMs": 5.42
+            },
+            {
+              "text": " pode",
+              "startMs": 5.42,
+              "endMs": 5.58
+            },
+            {
+              "text": " estar",
+              "startMs": 5.58,
+              "endMs": 5.88
+            },
+            {
+              "text": " em",
+              "startMs": 5.88,
+              "endMs": 6.44
+            },
+            {
+              "text": " um",
+              "startMs": 6.44,
+              "endMs": 6.62
+            },
+            {
+              "text": " de",
+              "startMs": 6.62,
+              "endMs": 6.8
+            },
+            {
+              "text": " dois",
+              "startMs": 6.8,
+              "endMs": 7.06
+            },
+            {
+              "text": " estados.",
+              "startMs": 7.06,
+              "endMs": 7.66
+            },
+            {
+              "text": " Ligado,",
+              "startMs": 8.26,
+              "endMs": 8.9
+            },
+            {
+              "text": " 1,",
+              "startMs": 8.92,
+              "endMs": 9.38
+            },
+            {
+              "text": " ou",
+              "startMs": 9.58,
+              "endMs": 10.1
+            },
+            {
+              "text": " desligado,",
+              "startMs": 10.1,
+              "endMs": 10.82
+            },
+            {
+              "text": " 0.",
+              "startMs": 10.92,
+              "endMs": 11.5
+            },
+            {
+              "text": " Esses",
+              "startMs": 12.3,
+              "endMs": 12.94
+            },
+            {
+              "text": " estados",
+              "startMs": 12.94,
+              "endMs": 13.42
+            },
+            {
+              "text": " são",
+              "startMs": 13.42,
+              "endMs": 13.84
+            },
+            {
+              "text": " usados",
+              "startMs": 13.84,
+              "endMs": 14.32
+            },
+            {
+              "text": " para",
+              "startMs": 14.32,
+              "endMs": 14.5
+            },
+            {
+              "text": " representar",
+              "startMs": 14.5,
+              "endMs": 15.16
+            },
+            {
+              "text": " dados",
+              "startMs": 15.16,
+              "endMs": 15.48
+            },
+            {
+              "text": " e",
+              "startMs": 15.48,
+              "endMs": 15.84
+            },
+            {
+              "text": " instruções",
+              "startMs": 15.84,
+              "endMs": 16.58
+            },
+            {
+              "text": " que",
+              "startMs": 16.58,
+              "endMs": 16.8
+            },
+            {
+              "text": " os",
+              "startMs": 16.8,
+              "endMs": 16.9
+            },
+            {
+              "text": " computadores",
+              "startMs": 16.9,
+              "endMs": 17.5
+            },
+            {
+              "text": " processam.",
+              "startMs": 17.5,
+              "endMs": 18.2
+            },
+            {
+              "text": " Combinando",
+              "startMs": 19.04,
+              "endMs": 19.68
+            },
+            {
+              "text": " vários",
+              "startMs": 19.68,
+              "endMs": 19.98
+            },
+            {
+              "text": " bits,",
+              "startMs": 19.98,
+              "endMs": 20.34
+            },
+            {
+              "text": " podemos",
+              "startMs": 20.54,
+              "endMs": 20.98
+            },
+            {
+              "text": " criar",
+              "startMs": 20.98,
+              "endMs": 21.32
+            },
+            {
+              "text": " bytes,",
+              "startMs": 21.32,
+              "endMs": 21.7
+            },
+            {
+              "text": " kilobytes,",
+              "startMs": 21.96,
+              "endMs": 22.7
+            },
+            {
+              "text": " megabytes",
+              "startMs": 23.18,
+              "endMs": 23.86
+            },
+            {
+              "text": " e",
+              "startMs": 23.86,
+              "endMs": 24.5
+            },
+            {
+              "text": " assim",
+              "startMs": 24.5,
+              "endMs": 24.72
+            },
+            {
+              "text": " por",
+              "startMs": 24.72,
+              "endMs": 24.92
+            },
+            {
+              "text": " diante,",
+              "startMs": 24.92,
+              "endMs": 25.32
+            },
+            {
+              "text": " permitindo",
+              "startMs": 25.42,
+              "endMs": 26.18
+            },
+            {
+              "text": " que",
+              "startMs": 26.18,
+              "endMs": 26.32
+            },
+            {
+              "text": " armazenemos",
+              "startMs": 26.32,
+              "endMs": 27.1
+            },
+            {
+              "text": " e",
+              "startMs": 27.1,
+              "endMs": 27.24
+            },
+            {
+              "text": " transmitamos",
+              "startMs": 27.24,
+              "endMs": 27.82
+            },
+            {
+              "text": " informações",
+              "startMs": 27.82,
+              "endMs": 28.14
+            },
+            {
+              "text": " complexas.",
+              "startMs": 28.14,
+              "endMs": 29.26
+            }
+          ],
+          "duration": 713,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/4990233/4990233-hd_1920_1080_30fps.mp4",
+              "file": "media/000/explanation/4990233-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 300
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/2792370/2792370-hd_1920_1080_30fps.mp4",
+              "file": "media/000/explanation/2792370-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 300
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/14209120/14209120-uhd_3840_2160_30fps.mp4",
+              "file": "media/000/explanation/14209120-uhd_3840_2160_30fps.mp4",
+              "width": 3840,
+              "height": 2160,
+              "duration": 210
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/6330779/6330779-hd_1920_1080_30fps.mp4",
+              "file": "media/000/explanation/6330779-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 359
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/5474270/5474270-uhd_2732_1440_25fps.mp4",
+              "file": "media/000/explanation/5474270-uhd_2732_1440_25fps.mp4",
+              "width": 2732,
+              "height": 1440,
               "duration": 400
             }
           ]
         },
-        "engagement": {
-          "text": "E aí, qual tipo de dado você mais usa no seu dia a dia de programação? Compartilhe nos comentários!",
-          "audio": "public/audio/007/engagement.mp3",
-          "duration": 127,
+        "example": {
+          "text": "Por exemplo, a letra 'A' em um computador é representada por uma combinação de bits: 01000001. Cada caractere, imagem ou som que você vê na tela é traduzido em uma sequência de bits.",
+          "audio": "audio/000/example.mp3",
+          "segments": [
+            {
+              "text": " Por",
+              "startMs": 0,
+              "endMs": 0.16
+            },
+            {
+              "text": " exemplo,",
+              "startMs": 0.16,
+              "endMs": 0.46
+            },
+            {
+              "text": " a",
+              "startMs": 0.74,
+              "endMs": 1.18
+            },
+            {
+              "text": " letra",
+              "startMs": 1.18,
+              "endMs": 1.56
+            },
+            {
+              "text": " A",
+              "startMs": 1.56,
+              "endMs": 1.8
+            },
+            {
+              "text": " em",
+              "startMs": 1.8,
+              "endMs": 2.14
+            },
+            {
+              "text": " um",
+              "startMs": 2.14,
+              "endMs": 2.26
+            },
+            {
+              "text": " computador",
+              "startMs": 2.26,
+              "endMs": 2.86
+            },
+            {
+              "text": " é",
+              "startMs": 2.86,
+              "endMs": 3.48
+            },
+            {
+              "text": " representada",
+              "startMs": 3.48,
+              "endMs": 4.16
+            },
+            {
+              "text": " por",
+              "startMs": 4.16,
+              "endMs": 4.3
+            },
+            {
+              "text": " uma",
+              "startMs": 4.3,
+              "endMs": 4.44
+            },
+            {
+              "text": " combinação",
+              "startMs": 4.44,
+              "endMs": 5.12
+            },
+            {
+              "text": " de",
+              "startMs": 5.12,
+              "endMs": 5.36
+            },
+            {
+              "text": " bits,",
+              "startMs": 5.36,
+              "endMs": 5.6
+            },
+            {
+              "text": " 0MXA",
+              "startMs": 5.84,
+              "endMs": 7.28
+            },
+            {
+              "text": " e",
+              "startMs": 7.28,
+              "endMs": 7.52
+            },
+            {
+              "text": " SXNBAT1.",
+              "startMs": 7.52,
+              "endMs": 8.88
+            },
+            {
+              "text": " Cada",
+              "startMs": 9.900000000000002,
+              "endMs": 10.46
+            },
+            {
+              "text": " caractere,",
+              "startMs": 10.46,
+              "endMs": 11.02
+            },
+            {
+              "text": " imagem",
+              "startMs": 11.08,
+              "endMs": 11.36
+            },
+            {
+              "text": " ou",
+              "startMs": 11.36,
+              "endMs": 11.86
+            },
+            {
+              "text": " som",
+              "startMs": 11.86,
+              "endMs": 12.2
+            },
+            {
+              "text": " que",
+              "startMs": 12.2,
+              "endMs": 12.4
+            },
+            {
+              "text": " você",
+              "startMs": 12.4,
+              "endMs": 12.6
+            },
+            {
+              "text": " vê",
+              "startMs": 12.6,
+              "endMs": 12.8
+            },
+            {
+              "text": " na",
+              "startMs": 12.8,
+              "endMs": 12.92
+            },
+            {
+              "text": " tela",
+              "startMs": 12.92,
+              "endMs": 13.2
+            },
+            {
+              "text": " é",
+              "startMs": 13.2,
+              "endMs": 13.72
+            },
+            {
+              "text": " traduzido",
+              "startMs": 13.72,
+              "endMs": 14.32
+            },
+            {
+              "text": " em",
+              "startMs": 14.32,
+              "endMs": 14.4
+            },
+            {
+              "text": " uma",
+              "startMs": 14.4,
+              "endMs": 14.52
+            },
+            {
+              "text": " sequência",
+              "startMs": 14.52,
+              "endMs": 15.12
+            },
+            {
+              "text": " de",
+              "startMs": 15.12,
+              "endMs": 15.26
+            },
+            {
+              "text": " bits.",
+              "startMs": 15.26,
+              "endMs": 15.46
+            }
+          ],
+          "duration": 387,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/5377277/5377277-uhd_1440_2560_25fps.mp4",
-              "duration": 400
+              "original": "https://videos.pexels.com/video-files/5473977/5473977-uhd_2732_1440_25fps.mp4",
+              "file": "media/000/example/5473977-uhd_2732_1440_25fps.mp4",
+              "width": 2732,
+              "height": 1440,
+              "duration": 850
+            }
+          ]
+        },
+        "engagement": {
+          "text": "Você sabia que tudo no seu computador começa com um simples bit? Qual parte da tecnologia você gostaria de entender melhor? Comente abaixo!",
+          "audio": "audio/000/engagement.mp3",
+          "segments": [
+            {
+              "text": " Você",
+              "startMs": 0,
+              "endMs": 0.18
+            },
+            {
+              "text": " sabia",
+              "startMs": 0.18,
+              "endMs": 0.48
+            },
+            {
+              "text": " que",
+              "startMs": 0.48,
+              "endMs": 0.66
+            },
+            {
+              "text": " tudo",
+              "startMs": 0.66,
+              "endMs": 0.92
+            },
+            {
+              "text": " no",
+              "startMs": 0.92,
+              "endMs": 1.1
+            },
+            {
+              "text": " seu",
+              "startMs": 1.1,
+              "endMs": 1.24
+            },
+            {
+              "text": " computador",
+              "startMs": 1.24,
+              "endMs": 1.72
+            },
+            {
+              "text": " começa",
+              "startMs": 1.72,
+              "endMs": 2
+            },
+            {
+              "text": " com",
+              "startMs": 2,
+              "endMs": 2.34
+            },
+            {
+              "text": " um",
+              "startMs": 2.34,
+              "endMs": 2.46
+            },
+            {
+              "text": " simples",
+              "startMs": 2.46,
+              "endMs": 2.84
+            },
+            {
+              "text": " bit?",
+              "startMs": 2.84,
+              "endMs": 3.14
+            },
+            {
+              "text": " Qual",
+              "startMs": 4.2,
+              "endMs": 4.78
+            },
+            {
+              "text": " parte",
+              "startMs": 4.78,
+              "endMs": 5.08
+            },
+            {
+              "text": " da",
+              "startMs": 5.08,
+              "endMs": 5.22
+            },
+            {
+              "text": " tecnologia",
+              "startMs": 5.22,
+              "endMs": 5.56
+            },
+            {
+              "text": " você",
+              "startMs": 5.56,
+              "endMs": 5.96
+            },
+            {
+              "text": " gostaria",
+              "startMs": 5.96,
+              "endMs": 6.44
+            },
+            {
+              "text": " de",
+              "startMs": 6.44,
+              "endMs": 6.56
+            },
+            {
+              "text": " entender",
+              "startMs": 6.56,
+              "endMs": 6.74
+            },
+            {
+              "text": " melhor?",
+              "startMs": 6.74,
+              "endMs": 7.12
+            },
+            {
+              "text": " Comente",
+              "startMs": 8.48,
+              "endMs": 9.06
+            },
+            {
+              "text": " abaixo!",
+              "startMs": 9.06,
+              "endMs": 9.64
+            }
+          ],
+          "duration": 246,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/854322/854322-hd_1280_720_25fps.mp4",
+              "file": "media/000/engagement/854322-hd_1280_720_25fps.mp4",
+              "width": 1280,
+              "height": 720,
+              "duration": 250
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/12920674/12920674-hd_1920_1080_30fps.mp4",
+              "file": "media/000/engagement/12920674-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 300
             }
           ]
         }
       }
     },
     {
-      "title": "Sugestão de Tópico para Vídeo",
-      "topic": "Numerical Systems (Binary, Octal, Decimal, Hexadecimal)",
+      "title": "Byte",
+      "topic": "Byte",
       "level": "1 - Basic",
-      "description": "Introdução aos Sistemas Numéricos (Binário, Octal, Decimal, Hexadecimal)",
-      "justification": "Após cobrir conceitos básicos de hardware e unidades de dados como bit e byte, a introdução aos sistemas numéricos é uma progressão natural. Este tópico é fundamental para entender como os dados são representados e processados em computadores. Além disso, é um conceito que pode ser visualmente atraente e intrigante para iniciantes, facilitando o engajamento. Comparado a outros tópicos como 'Loop' ou 'Variable', que são mais avançados e dependem de uma compreensão prévia de programação, os sistemas numéricos são mais acessíveis neste estágio."
-    },
-    {
-      "title": "Introdução aos Tipos de Dados",
-      "topic": "Data Types",
-      "level": "1 - Basic",
-      "description": "Este vídeo explicará o que são tipos de dados em programação, destacando os tipos básicos como inteiros, caracteres e booleanos. Será abordado como diferentes tipos de dados são usados para representar diferentes formas de informação em um computador.",
-      "justification": "Escolhi 'Tipos de Dados' porque é um conceito fundamental que constrói diretamente sobre o entendimento de unidades básicas de dados como bits e bytes, já abordados anteriormente. Este tópico é essencial antes de avançar para conceitos mais complexos como variáveis e funções. Além disso, é um conceito que pode ser visualmente representado e facilmente compreendido por iniciantes, o que aumenta o engajamento do público.",
+      "description": "Introdução ao conceito de Byte, explicando sua relação com o Bit e sua importância como unidade básica de armazenamento de dados em tecnologia.",
+      "justification": "Após introduzir o conceito de Bit, o próximo passo lógico é explorar o Byte, que é a unidade básica de armazenamento de dados composta por 8 bits. Este tópico é fundamental para entender como os dados são armazenados e processados em dispositivos eletrônicos, e serve como base para tópicos mais complexos como tipos de dados e sistemas numéricos. Além disso, o Byte é um conceito tangível e fácil de visualizar, o que ajuda a manter o engajamento do público iniciante.",
       "script": {
         "hook": {
-          "text": "Você sabia que os tipos de dados são a espinha dorsal de qualquer programa? Vamos desvendar esse mistério!",
-          "audio": "public/audio/009/hook.mp3",
-          "duration": 161,
-          "media": [
+          "text": "Você já se perguntou como os dados são armazenados no seu computador?",
+          "audio": "audio/001/hook.mp3",
+          "segments": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/7989667/7989667-hd_1080_1920_25fps.mp4",
-              "duration": 350,
-              "file": "public/media/009/hook/7989667-hd_1080_1920_25fps.mp4"
+              "text": " Você",
+              "startMs": 0,
+              "endMs": 180
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_3840_2160_30fps.mp4",
-              "duration": 600,
-              "file": "public/media/009/hook/3130284-uhd_3840_2160_30fps.mp4"
+              "text": " já",
+              "startMs": 180,
+              "endMs": 340
+            },
+            {
+              "text": " se",
+              "startMs": 340,
+              "endMs": 440
+            },
+            {
+              "text": " perguntou",
+              "startMs": 440,
+              "endMs": 960
+            },
+            {
+              "text": " como",
+              "startMs": 960,
+              "endMs": 1200
+            },
+            {
+              "text": " os",
+              "startMs": 1200,
+              "endMs": 1340
+            },
+            {
+              "text": " dados",
+              "startMs": 1340,
+              "endMs": 1580
+            },
+            {
+              "text": " são",
+              "startMs": 1580,
+              "endMs": 1820
+            },
+            {
+              "text": " armazenados",
+              "startMs": 1820,
+              "endMs": 2500
+            },
+            {
+              "text": " no",
+              "startMs": 2500,
+              "endMs": 2580
+            },
+            {
+              "text": " seu",
+              "startMs": 2580,
+              "endMs": 2720
+            },
+            {
+              "text": " computador?",
+              "startMs": 2720,
+              "endMs": 3180
+            }
+          ],
+          "duration": 97,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/3195532/3195532-uhd_2560_1440_25fps.mp4",
+              "file": "media/001/hook/3195532-uhd_2560_1440_25fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 475
             }
           ]
         },
         "intro": {
-          "text": "Tipos de dados são como ingredientes em uma receita: cada um tem sua função e importância. Sem eles, programar seria como cozinhar sem saber o que está usando!",
-          "audio": "public/audio/009/intro.mp3",
-          "duration": 247,
-          "media": [
+          "text": "Hoje vamos falar sobre o byte, a menor unidade de dados em um computador. Pense nele como um tijolo na construção de um prédio digital.",
+          "audio": "audio/001/intro.mp3",
+          "segments": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/4629779/4629779-uhd_3840_2160_25fps.mp4",
-              "duration": 375,
-              "file": "public/media/009/intro/4629779-uhd_3840_2160_25fps.mp4"
+              "text": " Hoje",
+              "startMs": 0,
+              "endMs": 160
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/29458457/12680994_1920_1080_25fps.mp4",
-              "duration": 250,
-              "file": "public/media/009/intro/12680994_1920_1080_25fps.mp4"
+              "text": " vamos",
+              "startMs": 160,
+              "endMs": 360
+            },
+            {
+              "text": " falar",
+              "startMs": 360,
+              "endMs": 680
+            },
+            {
+              "text": " sobre",
+              "startMs": 680,
+              "endMs": 980
+            },
+            {
+              "text": " o",
+              "startMs": 980,
+              "endMs": 1120
+            },
+            {
+              "text": " byte,",
+              "startMs": 1120,
+              "endMs": 1320
+            },
+            {
+              "text": " a",
+              "startMs": 1560,
+              "endMs": 2160
+            },
+            {
+              "text": " menor",
+              "startMs": 2160,
+              "endMs": 2440
+            },
+            {
+              "text": " unidade",
+              "startMs": 2440,
+              "endMs": 2900
+            },
+            {
+              "text": " de",
+              "startMs": 2900,
+              "endMs": 3080
+            },
+            {
+              "text": " dados",
+              "startMs": 3080,
+              "endMs": 3340
+            },
+            {
+              "text": " em",
+              "startMs": 3340,
+              "endMs": 3480
+            },
+            {
+              "text": " um",
+              "startMs": 3480,
+              "endMs": 3560
+            },
+            {
+              "text": " computador.",
+              "startMs": 3560,
+              "endMs": 4040
+            },
+            {
+              "text": " Pense",
+              "startMs": 5520,
+              "endMs": 5920
+            },
+            {
+              "text": " nele",
+              "startMs": 5920,
+              "endMs": 6200
+            },
+            {
+              "text": " como",
+              "startMs": 6200,
+              "endMs": 6360
+            },
+            {
+              "text": " um",
+              "startMs": 6360,
+              "endMs": 6480
+            },
+            {
+              "text": " tijolo",
+              "startMs": 6480,
+              "endMs": 6960
+            },
+            {
+              "text": " na",
+              "startMs": 6960,
+              "endMs": 7120
+            },
+            {
+              "text": " construção",
+              "startMs": 7120,
+              "endMs": 7680
+            },
+            {
+              "text": " de",
+              "startMs": 7680,
+              "endMs": 7800
+            },
+            {
+              "text": " um",
+              "startMs": 7800,
+              "endMs": 7840
+            },
+            {
+              "text": " prédio",
+              "startMs": 7840,
+              "endMs": 8180
+            },
+            {
+              "text": " digital.",
+              "startMs": 8180,
+              "endMs": 8380
+            }
+          ],
+          "duration": 238,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/6466100/6466100-uhd_2560_1440_30fps.mp4",
+              "file": "media/001/intro/6466100-uhd_2560_1440_30fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 300
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/5028622/5028622-uhd_2560_1440_25fps.mp4",
+              "file": "media/001/intro/5028622-uhd_2560_1440_25fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 800
             }
           ]
         },
         "explanation": {
-          "text": "Em programação, tipos de dados definem o que você pode fazer com as variáveis. Por exemplo, números para cálculos, textos para mensagens, e muito mais. Eles ajudam a organizar e processar informações de forma eficiente.",
-          "audio": "public/audio/009/explanation.mp3",
-          "duration": 355,
+          "text": "Um byte é composto por 8 bits, e cada bit é um 0 ou 1. Juntos, eles formam combinações que representam diferentes informações, como letras, números e cores. É a base de tudo que você vê na tela do seu dispositivo.",
+          "audio": "audio/001/explanation.mp3",
+          "segments": [
+            {
+              "text": " Um",
+              "startMs": 0,
+              "endMs": 140
+            },
+            {
+              "text": " byte",
+              "startMs": 140,
+              "endMs": 340
+            },
+            {
+              "text": " é",
+              "startMs": 340,
+              "endMs": 540
+            },
+            {
+              "text": " composto",
+              "startMs": 540,
+              "endMs": 1040
+            },
+            {
+              "text": " por",
+              "startMs": 1040,
+              "endMs": 1200
+            },
+            {
+              "text": " oito",
+              "startMs": 1200,
+              "endMs": 1580
+            },
+            {
+              "text": " bits,",
+              "startMs": 1580,
+              "endMs": 1780
+            },
+            {
+              "text": " e",
+              "startMs": 2040,
+              "endMs": 2500
+            },
+            {
+              "text": " cada",
+              "startMs": 2500,
+              "endMs": 2740
+            },
+            {
+              "text": " bit",
+              "startMs": 2740,
+              "endMs": 3100
+            },
+            {
+              "text": " é",
+              "startMs": 3100,
+              "endMs": 3440
+            },
+            {
+              "text": " um",
+              "startMs": 3440,
+              "endMs": 3640
+            },
+            {
+              "text": " zero",
+              "startMs": 3640,
+              "endMs": 3940
+            },
+            {
+              "text": " ou",
+              "startMs": 3940,
+              "endMs": 4360
+            },
+            {
+              "text": " um.",
+              "startMs": 4360,
+              "endMs": 4560
+            },
+            {
+              "text": " Juntos,",
+              "startMs": 6000,
+              "endMs": 6600
+            },
+            {
+              "text": " eles",
+              "startMs": 6600,
+              "endMs": 7020
+            },
+            {
+              "text": " formam",
+              "startMs": 7020,
+              "endMs": 7420
+            },
+            {
+              "text": " combinações",
+              "startMs": 7420,
+              "endMs": 8000
+            },
+            {
+              "text": " que",
+              "startMs": 8000,
+              "endMs": 8260
+            },
+            {
+              "text": " representam",
+              "startMs": 8260,
+              "endMs": 8840
+            },
+            {
+              "text": " diferentes",
+              "startMs": 8840,
+              "endMs": 9160
+            },
+            {
+              "text": " informações,",
+              "startMs": 9160,
+              "endMs": 9820
+            },
+            {
+              "text": " como",
+              "startMs": 10260,
+              "endMs": 10840
+            },
+            {
+              "text": " letras,",
+              "startMs": 10840,
+              "endMs": 11400
+            },
+            {
+              "text": " números",
+              "startMs": 11460,
+              "endMs": 11900
+            },
+            {
+              "text": " e",
+              "startMs": 11900,
+              "endMs": 12320
+            },
+            {
+              "text": " cores.",
+              "startMs": 12320,
+              "endMs": 12640
+            },
+            {
+              "text": " É",
+              "startMs": 13700,
+              "endMs": 14000
+            },
+            {
+              "text": " a",
+              "startMs": 14000,
+              "endMs": 14140
+            },
+            {
+              "text": " base",
+              "startMs": 14140,
+              "endMs": 14520
+            },
+            {
+              "text": " de",
+              "startMs": 14520,
+              "endMs": 14660
+            },
+            {
+              "text": " tudo",
+              "startMs": 14660,
+              "endMs": 14940
+            },
+            {
+              "text": " o",
+              "startMs": 14940,
+              "endMs": 15060
+            },
+            {
+              "text": " que",
+              "startMs": 15060,
+              "endMs": 15160
+            },
+            {
+              "text": " você",
+              "startMs": 15160,
+              "endMs": 15380
+            },
+            {
+              "text": " vê",
+              "startMs": 15380,
+              "endMs": 15640
+            },
+            {
+              "text": " na",
+              "startMs": 15640,
+              "endMs": 15760
+            },
+            {
+              "text": " tela",
+              "startMs": 15760,
+              "endMs": 16059.999999999998
+            },
+            {
+              "text": " do",
+              "startMs": 16059.999999999998,
+              "endMs": 16160
+            },
+            {
+              "text": " seu",
+              "startMs": 16160,
+              "endMs": 16320
+            },
+            {
+              "text": " dispositivo.",
+              "startMs": 16320,
+              "endMs": 17120
+            }
+          ],
+          "duration": 458,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/7534244/7534244-hd_1920_1080_25fps.mp4",
-              "duration": 300,
-              "file": "public/media/009/explanation/7534244-hd_1920_1080_25fps.mp4"
+              "original": "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4",
+              "file": "media/001/explanation/6963744-hd_1920_1080_25fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 300
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4",
-              "duration": 629,
-              "file": "public/media/009/explanation/5495781-uhd_2560_1080_30fps.mp4"
+              "original": "https://videos.pexels.com/video-files/4990233/4990233-hd_1920_1080_30fps.mp4",
+              "file": "media/001/explanation/4990233-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 300
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/6238188/6238188-hd_1920_1080_30fps.mp4",
-              "duration": 480,
-              "file": "public/media/009/explanation/6238188-hd_1920_1080_30fps.mp4"
+              "original": "https://videos.pexels.com/video-files/6330779/6330779-hd_1920_1080_30fps.mp4",
+              "file": "media/001/explanation/6330779-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 359
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/25744127/11904066_2560_1440_15fps.mp4",
+              "file": "media/001/explanation/11904066_2560_1440_15fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 240
             }
           ]
         },
         "example": {
-          "text": "Imagine que você está organizando uma festa e precisa listar os convidados e a quantidade de comida. Os nomes são dados do tipo texto e as quantidades, números. Essa organização facilita muito na hora de preparar tudo!",
-          "audio": "public/audio/009/example.mp3",
-          "duration": 399,
+          "text": "Por exemplo, a letra 'A' é representada pelo byte 01000001. Cada caractere que você digita ou imagem que vê é traduzido em bytes para que o computador possa processar.",
+          "audio": "audio/001/example.mp3",
+          "segments": [
+            {
+              "text": " Por",
+              "startMs": 0,
+              "endMs": 140
+            },
+            {
+              "text": " exemplo,",
+              "startMs": 140,
+              "endMs": 460
+            },
+            {
+              "text": " a",
+              "startMs": 620,
+              "endMs": 720
+            },
+            {
+              "text": " letra",
+              "startMs": 720,
+              "endMs": 1100
+            },
+            {
+              "text": " A",
+              "startMs": 1100,
+              "endMs": 1460
+            },
+            {
+              "text": " é",
+              "startMs": 1460,
+              "endMs": 1840
+            },
+            {
+              "text": " representada",
+              "startMs": 1840,
+              "endMs": 2660
+            },
+            {
+              "text": " pelo",
+              "startMs": 2660,
+              "endMs": 2860
+            },
+            {
+              "text": " byte",
+              "startMs": 2860,
+              "endMs": 3120
+            },
+            {
+              "text": " 01CUS",
+              "startMs": 3120,
+              "endMs": 4300
+            },
+            {
+              "text": ".01.",
+              "startMs": 4300,
+              "endMs": 5260
+            },
+            {
+              "text": " Cada",
+              "startMs": 5930,
+              "endMs": 6240
+            },
+            {
+              "text": " caractere",
+              "startMs": 6240,
+              "endMs": 6860
+            },
+            {
+              "text": " que",
+              "startMs": 6860,
+              "endMs": 7040
+            },
+            {
+              "text": " você",
+              "startMs": 7040,
+              "endMs": 7280
+            },
+            {
+              "text": " digita,",
+              "startMs": 7280,
+              "endMs": 7980
+            },
+            {
+              "text": " ou",
+              "startMs": 7980,
+              "endMs": 8520
+            },
+            {
+              "text": " imagem",
+              "startMs": 8520,
+              "endMs": 8880
+            },
+            {
+              "text": " que",
+              "startMs": 8880,
+              "endMs": 9160
+            },
+            {
+              "text": " vê,",
+              "startMs": 9160,
+              "endMs": 9360
+            },
+            {
+              "text": " é",
+              "startMs": 9460,
+              "endMs": 9800
+            },
+            {
+              "text": " traduzido",
+              "startMs": 9800,
+              "endMs": 10380
+            },
+            {
+              "text": " em",
+              "startMs": 10380,
+              "endMs": 10440
+            },
+            {
+              "text": " bytes",
+              "startMs": 10440,
+              "endMs": 10740
+            },
+            {
+              "text": " para",
+              "startMs": 10740,
+              "endMs": 11020
+            },
+            {
+              "text": " que",
+              "startMs": 11020,
+              "endMs": 11180
+            },
+            {
+              "text": " o",
+              "startMs": 11180,
+              "endMs": 11320
+            },
+            {
+              "text": " computador",
+              "startMs": 11320,
+              "endMs": 11940
+            },
+            {
+              "text": " possa",
+              "startMs": 11940,
+              "endMs": 12320
+            },
+            {
+              "text": " processar.",
+              "startMs": 12320,
+              "endMs": 12980
+            }
+          ],
+          "duration": 351,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/27650713/12194945_1920_1080_30fps.mp4",
-              "duration": 300,
-              "file": "public/media/009/example/12194945_1920_1080_30fps.mp4"
+              "original": "https://videos.pexels.com/video-files/6331338/6331338-hd_1080_1920_30fps.mp4",
+              "file": "media/001/example/6331338-hd_1080_1920_30fps.mp4",
+              "width": 1080,
+              "height": 1920,
+              "duration": 89
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/5495890/5495890-hd_1080_1920_30fps.mp4",
-              "duration": 329,
-              "file": "public/media/009/example/5495890-hd_1080_1920_30fps.mp4"
+              "original": "https://videos.pexels.com/video-files/12779321/12779321-hd_1920_1080_30fps.mp4",
+              "file": "media/001/example/12779321-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 779
             },
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/6266247/6266247-uhd_2560_1440_25fps.mp4",
-              "duration": 425,
-              "file": "public/media/009/example/6266247-uhd_2560_1440_25fps.mp4"
+              "original": "https://videos.pexels.com/video-files/5925283/5925283-uhd_1440_2560_24fps.mp4",
+              "file": "media/001/example/5925283-uhd_1440_2560_24fps.mp4",
+              "width": 1440,
+              "height": 2560,
+              "duration": 239
             }
           ]
         },
         "engagement": {
-          "text": "E aí, qual tipo de dado você mais usa nos seus programas? Compartilha com a gente nos comentários!",
-          "audio": "public/audio/009/engagement.mp3",
+          "text": "Qual foi a coisa mais interessante que você aprendeu sobre bytes hoje? Compartilhe nos comentários!",
+          "audio": "audio/001/engagement.mp3",
+          "segments": [
+            {
+              "text": " Qual",
+              "startMs": 0,
+              "endMs": 160
+            },
+            {
+              "text": " foi",
+              "startMs": 160,
+              "endMs": 280
+            },
+            {
+              "text": " a",
+              "startMs": 280,
+              "endMs": 340
+            },
+            {
+              "text": " coisa",
+              "startMs": 340,
+              "endMs": 580
+            },
+            {
+              "text": " mais",
+              "startMs": 580,
+              "endMs": 800
+            },
+            {
+              "text": " interessante",
+              "startMs": 800,
+              "endMs": 1300
+            },
+            {
+              "text": " que",
+              "startMs": 1300,
+              "endMs": 1560
+            },
+            {
+              "text": " você",
+              "startMs": 1560,
+              "endMs": 1760
+            },
+            {
+              "text": " aprendeu",
+              "startMs": 1760,
+              "endMs": 2240
+            },
+            {
+              "text": " sobre",
+              "startMs": 2240,
+              "endMs": 2420
+            },
+            {
+              "text": " bytes",
+              "startMs": 2420,
+              "endMs": 2720
+            },
+            {
+              "text": " hoje?",
+              "startMs": 2720,
+              "endMs": 3020
+            },
+            {
+              "text": " Compartilhe",
+              "startMs": 4000,
+              "endMs": 4520
+            },
+            {
+              "text": " nos",
+              "startMs": 4520,
+              "endMs": 4600
+            },
+            {
+              "text": " comentários!",
+              "startMs": 4600,
+              "endMs": 4860
+            }
+          ],
+          "duration": 149,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/8720754/8720754-uhd_4096_2160_25fps.mp4",
+              "file": "media/001/engagement/8720754-uhd_4096_2160_25fps.mp4",
+              "width": 4096,
+              "height": 2160,
+              "duration": 775
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Periféricos (Teclado, Mouse, Monitor)",
+      "topic": "Periféricos",
+      "level": "1 - Basic",
+      "description": "Introdução aos periféricos básicos de um computador, como teclado, mouse e monitor, explicando suas funções e importância no uso diário da tecnologia.",
+      "justification": "Escolhi 'Periféricos' porque é um conceito tangível e fácil de entender para iniciantes. Após cobrir 'Bit' e 'Byte', que são conceitos mais abstratos, é importante introduzir algo que os usuários possam ver e tocar. Isso ajuda a criar uma conexão prática com a tecnologia, tornando o aprendizado mais envolvente e acessível. Além disso, entender os periféricos é fundamental para qualquer interação básica com computadores, o que alinha bem com o nível básico da série.",
+      "script": {
+        "hook": {
+          "text": "Você sabe quais são os periféricos essenciais para turbinar seu setup de computador?",
+          "audio": "audio/002/hook.mp3",
+          "segments": [
+            {
+              "text": " Você",
+              "startMs": 0,
+              "endMs": 180
+            },
+            {
+              "text": " sabe",
+              "startMs": 180,
+              "endMs": 440
+            },
+            {
+              "text": " quais",
+              "startMs": 440,
+              "endMs": 680
+            },
+            {
+              "text": " são",
+              "startMs": 680,
+              "endMs": 940
+            },
+            {
+              "text": " os",
+              "startMs": 940,
+              "endMs": 1060
+            },
+            {
+              "text": " periféricos",
+              "startMs": 1060,
+              "endMs": 1720
+            },
+            {
+              "text": " essenciais",
+              "startMs": 1720,
+              "endMs": 2300
+            },
+            {
+              "text": " para",
+              "startMs": 2300,
+              "endMs": 2440
+            },
+            {
+              "text": " turbinar",
+              "startMs": 2440,
+              "endMs": 2940
+            },
+            {
+              "text": " seu",
+              "startMs": 2940,
+              "endMs": 3120
+            },
+            {
+              "text": " setup",
+              "startMs": 3120,
+              "endMs": 3380
+            },
+            {
+              "text": " de",
+              "startMs": 3380,
+              "endMs": 3700
+            },
+            {
+              "text": " computador?",
+              "startMs": 3700,
+              "endMs": 4140
+            }
+          ],
           "duration": 121,
           "media": [
             {
-              "type": "video",
-              "video": "https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4",
-              "duration": 1648,
-              "file": "public/media/009/engagement/2278095-hd_1920_1080_30fps.mp4"
+              "original": "https://videos.pexels.com/video-files/2110240/2110240-uhd_2560_1440_25fps.mp4",
+              "file": "media/002/hook/2110240-uhd_2560_1440_25fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 550
+            }
+          ]
+        },
+        "intro": {
+          "text": "Periféricos são dispositivos que conectamos ao computador para expandir suas funcionalidades. Pense neles como acessórios que transformam seu PC em uma máquina ainda mais poderosa.",
+          "audio": "audio/002/intro.mp3",
+          "segments": [
+            {
+              "text": " Periféricos",
+              "startMs": 0,
+              "endMs": 740
+            },
+            {
+              "text": " são",
+              "startMs": 740,
+              "endMs": 840
+            },
+            {
+              "text": " dispositivos",
+              "startMs": 840,
+              "endMs": 1620
+            },
+            {
+              "text": " que",
+              "startMs": 1620,
+              "endMs": 1720
+            },
+            {
+              "text": " conectamos",
+              "startMs": 1720,
+              "endMs": 2280
+            },
+            {
+              "text": " ao",
+              "startMs": 2280,
+              "endMs": 2500
+            },
+            {
+              "text": " computador",
+              "startMs": 2500,
+              "endMs": 3220
+            },
+            {
+              "text": " para",
+              "startMs": 3220,
+              "endMs": 3720
+            },
+            {
+              "text": " expandir",
+              "startMs": 3720,
+              "endMs": 4440
+            },
+            {
+              "text": " suas",
+              "startMs": 4440,
+              "endMs": 4580
+            },
+            {
+              "text": " funcionalidades.",
+              "startMs": 4580,
+              "endMs": 5580
+            },
+            {
+              "text": " Pense",
+              "startMs": 6500.000000000001,
+              "endMs": 6940
+            },
+            {
+              "text": " neles",
+              "startMs": 6940,
+              "endMs": 7180
+            },
+            {
+              "text": " como",
+              "startMs": 7180,
+              "endMs": 7380
+            },
+            {
+              "text": " acessórios",
+              "startMs": 7380,
+              "endMs": 8039.999999999999
+            },
+            {
+              "text": " que",
+              "startMs": 8039.999999999999,
+              "endMs": 8200
+            },
+            {
+              "text": " transformam",
+              "startMs": 8200,
+              "endMs": 8880
+            },
+            {
+              "text": " seu",
+              "startMs": 8880,
+              "endMs": 9020
+            },
+            {
+              "text": " PC",
+              "startMs": 9020,
+              "endMs": 9380
+            },
+            {
+              "text": " em",
+              "startMs": 9380,
+              "endMs": 10080
+            },
+            {
+              "text": " uma",
+              "startMs": 10080,
+              "endMs": 10260
+            },
+            {
+              "text": " máquina",
+              "startMs": 10260,
+              "endMs": 10640
+            },
+            {
+              "text": " ainda",
+              "startMs": 10640,
+              "endMs": 11080
+            },
+            {
+              "text": " mais",
+              "startMs": 11080,
+              "endMs": 11540
+            },
+            {
+              "text": " poderosa.",
+              "startMs": 11540,
+              "endMs": 12300
+            }
+          ],
+          "duration": 332,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/856985/856985-hd_1920_1080_30fps.mp4",
+              "file": "media/002/intro/856985-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 269
+            }
+          ]
+        },
+        "explanation": {
+          "text": "Os periféricos podem ser de entrada, como teclados e mouses, que enviam informações para o computador, ou de saída, como monitores e impressoras, que recebem dados do computador. Eles são fundamentais para interagir com a máquina e realizar tarefas específicas, como digitar um texto ou imprimir um documento.",
+          "audio": "audio/002/explanation.mp3",
+          "segments": [
+            {
+              "text": " Os",
+              "startMs": 0,
+              "endMs": 120
+            },
+            {
+              "text": " periféricos",
+              "startMs": 120,
+              "endMs": 820
+            },
+            {
+              "text": " podem",
+              "startMs": 820,
+              "endMs": 1000
+            },
+            {
+              "text": " ser",
+              "startMs": 1000,
+              "endMs": 1220
+            },
+            {
+              "text": " de",
+              "startMs": 1220,
+              "endMs": 1400
+            },
+            {
+              "text": " entrada,",
+              "startMs": 1400,
+              "endMs": 1660
+            },
+            {
+              "text": " como",
+              "startMs": 1840,
+              "endMs": 2060
+            },
+            {
+              "text": " teclados",
+              "startMs": 2060,
+              "endMs": 2740
+            },
+            {
+              "text": " e",
+              "startMs": 2740,
+              "endMs": 2860
+            },
+            {
+              "text": " mouses,",
+              "startMs": 2860,
+              "endMs": 3240
+            },
+            {
+              "text": " que",
+              "startMs": 3320,
+              "endMs": 3920
+            },
+            {
+              "text": " enviam",
+              "startMs": 3920,
+              "endMs": 4300
+            },
+            {
+              "text": " informações",
+              "startMs": 4300,
+              "endMs": 4700
+            },
+            {
+              "text": " para",
+              "startMs": 4700,
+              "endMs": 5080
+            },
+            {
+              "text": " o",
+              "startMs": 5080,
+              "endMs": 5200
+            },
+            {
+              "text": " computador,",
+              "startMs": 5200,
+              "endMs": 5740
+            },
+            {
+              "text": " ou",
+              "startMs": 6130.000000000001,
+              "endMs": 6480
+            },
+            {
+              "text": " de",
+              "startMs": 6480,
+              "endMs": 6600
+            },
+            {
+              "text": " saída,",
+              "startMs": 6600,
+              "endMs": 7060
+            },
+            {
+              "text": " como",
+              "startMs": 7120,
+              "endMs": 7680
+            },
+            {
+              "text": " monitores",
+              "startMs": 7680,
+              "endMs": 8320
+            },
+            {
+              "text": " e",
+              "startMs": 8320,
+              "endMs": 8440
+            },
+            {
+              "text": " impressoras",
+              "startMs": 8440,
+              "endMs": 9000
+            },
+            {
+              "text": " que",
+              "startMs": 9000,
+              "endMs": 9200
+            },
+            {
+              "text": " recebem",
+              "startMs": 9200,
+              "endMs": 9660
+            },
+            {
+              "text": " dados",
+              "startMs": 9660,
+              "endMs": 9920
+            },
+            {
+              "text": " do",
+              "startMs": 9920,
+              "endMs": 10220
+            },
+            {
+              "text": " computador.",
+              "startMs": 10220,
+              "endMs": 10680
+            },
+            {
+              "text": " Eles",
+              "startMs": 12030.000000000002,
+              "endMs": 12380
+            },
+            {
+              "text": " são",
+              "startMs": 12380,
+              "endMs": 12560
+            },
+            {
+              "text": " fundamentais",
+              "startMs": 12560,
+              "endMs": 13480
+            },
+            {
+              "text": " para",
+              "startMs": 13480,
+              "endMs": 13600
+            },
+            {
+              "text": " interagir",
+              "startMs": 13600,
+              "endMs": 14160
+            },
+            {
+              "text": " com",
+              "startMs": 14160,
+              "endMs": 14300
+            },
+            {
+              "text": " a",
+              "startMs": 14300,
+              "endMs": 14420
+            },
+            {
+              "text": " máquina",
+              "startMs": 14420,
+              "endMs": 14800
+            },
+            {
+              "text": " e",
+              "startMs": 14800,
+              "endMs": 15400
+            },
+            {
+              "text": " realizar",
+              "startMs": 15400,
+              "endMs": 15720
+            },
+            {
+              "text": " tarefas",
+              "startMs": 15720,
+              "endMs": 16480
+            },
+            {
+              "text": " específicas,",
+              "startMs": 16480,
+              "endMs": 17320
+            },
+            {
+              "text": " como",
+              "startMs": 17320,
+              "endMs": 17500
+            },
+            {
+              "text": " digitar",
+              "startMs": 17500,
+              "endMs": 18040
+            },
+            {
+              "text": " um",
+              "startMs": 18040,
+              "endMs": 18160
+            },
+            {
+              "text": " texto",
+              "startMs": 18160,
+              "endMs": 18540
+            },
+            {
+              "text": " ou",
+              "startMs": 18540,
+              "endMs": 18820
+            },
+            {
+              "text": " imprimir",
+              "startMs": 18820,
+              "endMs": 19260
+            },
+            {
+              "text": " um",
+              "startMs": 19260,
+              "endMs": 19340
+            },
+            {
+              "text": " documento.",
+              "startMs": 19340,
+              "endMs": 19980
+            }
+          ],
+          "duration": 531,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/5240982/5240982-uhd_2560_1440_30fps.mp4",
+              "file": "media/002/explanation/5240982-uhd_2560_1440_30fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 689
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/5925283/5925283-uhd_1440_2560_24fps.mp4",
+              "file": "media/002/explanation/5925283-uhd_1440_2560_24fps.mp4",
+              "width": 1440,
+              "height": 2560,
+              "duration": 239
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/7196106/7196106-uhd_2560_1440_25fps.mp4",
+              "file": "media/002/explanation/7196106-uhd_2560_1440_25fps.mp4",
+              "width": 2560,
+              "height": 1440,
+              "duration": 125
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/853769/853769-hd_1920_1080_25fps.mp4",
+              "file": "media/002/explanation/853769-hd_1920_1080_25fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 350
+            }
+          ]
+        },
+        "example": {
+          "text": "Por exemplo, um headset com microfone é um periférico que permite não só ouvir o áudio do computador, mas também participar de videochamadas ou gravar áudios. Isso é essencial para quem trabalha de casa ou joga online.",
+          "audio": "audio/002/example.mp3",
+          "segments": [
+            {
+              "text": " Por",
+              "startMs": 0,
+              "endMs": 140
+            },
+            {
+              "text": " exemplo,",
+              "startMs": 140,
+              "endMs": 480
+            },
+            {
+              "text": " um",
+              "startMs": 640,
+              "endMs": 860
+            },
+            {
+              "text": " headset",
+              "startMs": 860,
+              "endMs": 1180
+            },
+            {
+              "text": " com",
+              "startMs": 1180,
+              "endMs": 1640
+            },
+            {
+              "text": " microfone",
+              "startMs": 1640,
+              "endMs": 2280
+            },
+            {
+              "text": " é",
+              "startMs": 2280,
+              "endMs": 2580
+            },
+            {
+              "text": " um",
+              "startMs": 2580,
+              "endMs": 2720
+            },
+            {
+              "text": " periférico",
+              "startMs": 2720,
+              "endMs": 3400
+            },
+            {
+              "text": " que",
+              "startMs": 3400,
+              "endMs": 3600
+            },
+            {
+              "text": " permite",
+              "startMs": 3600,
+              "endMs": 3880
+            },
+            {
+              "text": " não",
+              "startMs": 3880,
+              "endMs": 4200
+            },
+            {
+              "text": " só",
+              "startMs": 4200,
+              "endMs": 4520
+            },
+            {
+              "text": " ouvir",
+              "startMs": 4520,
+              "endMs": 4940
+            },
+            {
+              "text": " o",
+              "startMs": 4940,
+              "endMs": 4960
+            },
+            {
+              "text": " áudio",
+              "startMs": 4960,
+              "endMs": 5280
+            },
+            {
+              "text": " do",
+              "startMs": 5280,
+              "endMs": 5360
+            },
+            {
+              "text": " computador,",
+              "startMs": 5360,
+              "endMs": 5880
+            },
+            {
+              "text": " mas",
+              "startMs": 5940,
+              "endMs": 6580
+            },
+            {
+              "text": " também",
+              "startMs": 6580,
+              "endMs": 6860
+            },
+            {
+              "text": " participar",
+              "startMs": 6860,
+              "endMs": 7420
+            },
+            {
+              "text": " de",
+              "startMs": 7420,
+              "endMs": 7820
+            },
+            {
+              "text": " videochamadas",
+              "startMs": 7820,
+              "endMs": 8620
+            },
+            {
+              "text": " ou",
+              "startMs": 8620,
+              "endMs": 8880
+            },
+            {
+              "text": " gravar",
+              "startMs": 8880,
+              "endMs": 9320
+            },
+            {
+              "text": " áudios.",
+              "startMs": 9320,
+              "endMs": 9700
+            },
+            {
+              "text": " Isso",
+              "startMs": 9780,
+              "endMs": 10220
+            },
+            {
+              "text": " é",
+              "startMs": 10220,
+              "endMs": 10380
+            },
+            {
+              "text": " essencial",
+              "startMs": 10380,
+              "endMs": 10940
+            },
+            {
+              "text": " para",
+              "startMs": 10940,
+              "endMs": 11180
+            },
+            {
+              "text": " quem",
+              "startMs": 11180,
+              "endMs": 11340
+            },
+            {
+              "text": " trabalha",
+              "startMs": 11340,
+              "endMs": 11760
+            },
+            {
+              "text": " de",
+              "startMs": 11760,
+              "endMs": 11820
+            },
+            {
+              "text": " casa",
+              "startMs": 11820,
+              "endMs": 12040
+            },
+            {
+              "text": " ou",
+              "startMs": 12040,
+              "endMs": 12440
+            },
+            {
+              "text": " joga",
+              "startMs": 12440,
+              "endMs": 12860
+            },
+            {
+              "text": " online.",
+              "startMs": 12860,
+              "endMs": 13040
+            }
+          ],
+          "duration": 358,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/6685367/6685367-hd_1920_1080_30fps.mp4",
+              "file": "media/002/example/6685367-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 1258
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/7706882/7706882-uhd_1440_2732_25fps.mp4",
+              "file": "media/002/example/7706882-uhd_1440_2732_25fps.mp4",
+              "width": 1440,
+              "height": 2732,
+              "duration": 525
+            },
+            {
+              "original": "https://videos.pexels.com/video-files/4487308/4487308-hd_1920_1080_30fps.mp4",
+              "file": "media/002/example/4487308-hd_1920_1080_30fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 450
+            }
+          ]
+        },
+        "engagement": {
+          "text": "E você, qual periférico não pode faltar no seu setup? Conta pra gente nos comentários!",
+          "audio": "audio/002/engagement.mp3",
+          "segments": [
+            {
+              "text": " E",
+              "startMs": 0,
+              "endMs": 120
+            },
+            {
+              "text": " você,",
+              "startMs": 120,
+              "endMs": 320
+            },
+            {
+              "text": " qual",
+              "startMs": 500,
+              "endMs": 760
+            },
+            {
+              "text": " periférico",
+              "startMs": 760,
+              "endMs": 1260
+            },
+            {
+              "text": " não",
+              "startMs": 1260,
+              "endMs": 1400
+            },
+            {
+              "text": " pode",
+              "startMs": 1400,
+              "endMs": 1620
+            },
+            {
+              "text": " faltar",
+              "startMs": 1620,
+              "endMs": 2020
+            },
+            {
+              "text": " no",
+              "startMs": 2020,
+              "endMs": 2080
+            },
+            {
+              "text": " seu",
+              "startMs": 2080,
+              "endMs": 2240
+            },
+            {
+              "text": " setup?",
+              "startMs": 2240,
+              "endMs": 2460
+            },
+            {
+              "text": " Conta",
+              "startMs": 3080.0000000000005,
+              "endMs": 3520
+            },
+            {
+              "text": " pra",
+              "startMs": 3520,
+              "endMs": 3600
+            },
+            {
+              "text": " gente",
+              "startMs": 3600,
+              "endMs": 3760
+            },
+            {
+              "text": " nos",
+              "startMs": 3760,
+              "endMs": 4000
+            },
+            {
+              "text": " comentários!",
+              "startMs": 4000,
+              "endMs": 4220
+            }
+          ],
+          "duration": 131,
+          "media": [
+            {
+              "original": "https://videos.pexels.com/video-files/852424/852424-hd_1920_1080_24fps.mp4",
+              "file": "media/002/engagement/852424-hd_1920_1080_24fps.mp4",
+              "width": 1920,
+              "height": 1080,
+              "duration": 191
             }
           ]
         }

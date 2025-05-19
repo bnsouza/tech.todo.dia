@@ -1,22 +1,30 @@
+// ------------------------------------------------------------------------------------------------
+
 import React from "react";
-import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from "remotion";
-import {Font} from "../load-font";
-import {fitText} from "@remotion/layout-utils";
 import {makeTransform, scale, translateY} from "@remotion/animation-utils";
 import {TikTokPage} from "@remotion/captions";
+import {fitText} from "@remotion/layout-utils";
+import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from "remotion";
+
+import {Font} from "../../lib/load-font";
+
+// ------------------------------------------------------------------------------------------------
 
 const fontFamily = Font;
 
 const container: React.CSSProperties = {
-  justifyContent: "center",
+  justifyContent: "start",
   alignItems: "center",
+  textAlign: "center",
   top: undefined,
-  bottom: 300,
-  height: 150,
+  bottom: -300,
+  height: 220,
 };
 
-const DESIRED_FONT_SIZE = 90;
+const DESIRED_FONT_SIZE = 80;
 const HIGHLIGHT_COLOR = "#F5F500";
+
+// ------------------------------------------------------------------------------------------------
 
 export const Page: React.FC<{
   enterProgress: number;
@@ -29,7 +37,7 @@ export const Page: React.FC<{
   const fittedText = fitText({
     fontFamily,
     text: page.text,
-    withinWidth: width * 0.9,
+    withinWidth: width,
   });
 
   const fontSize = Math.min(DESIRED_FONT_SIZE, fittedText.fontSize);
@@ -40,7 +48,7 @@ export const Page: React.FC<{
         style={{
           fontSize,
           color: "white",
-          WebkitTextStroke: "20px black",
+          WebkitTextStroke: "14px black",
           paintOrder: "stroke",
           transform: makeTransform([
             scale(interpolate(enterProgress, [0, 1], [0.8, 1])),
@@ -80,3 +88,5 @@ export const Page: React.FC<{
     </AbsoluteFill>
   );
 };
+
+// ------------------------------------------------------------------------------------------------

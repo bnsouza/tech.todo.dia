@@ -10,6 +10,7 @@ import {AudioController} from "./Audio";
 import {MediaController} from "./Media";
 import {NextController} from "./Next";
 import {PostController} from "./Post";
+import {RenderController} from "./Render";
 import {ScriptController} from "./Script";
 import {TopicController} from "./Topic";
 
@@ -45,7 +46,7 @@ export class VideoController {
     this.debug = debug;
 
     // Set the model to use for the AI
-    this.model = process.env.AUTOMATION_OPENAI_MODEL ?? "gpt-4-turbo";
+    this.model = process.env.AUTOMATION_OPENAI_MODEL ?? "gpt-4o";
 
     // Set the playback rate for the audio
     this.playbackRate = parseFloat(process.env.AUTOMATION_PLAYBACK_SPEED ?? "1.0");
@@ -90,6 +91,9 @@ export class VideoController {
 
     // Get the media for the script
     await this.getMedias();
+
+    // Render the video
+    await this.renderVideo();
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -198,7 +202,7 @@ export class VideoController {
 
     // Generate the audio for the script
     this.consoleLog("Generating audio for the script:");
-    const audioCtrl = new AudioController(this.index, this.playbackRate);
+    const audioCtrl = new AudioController(this.index, this.language, this.playbackRate);
     this.post.script = await audioCtrl.generateAudio(script);
 
     // Update the post with the new script
@@ -255,21 +259,50 @@ export class VideoController {
         system: systemPrompt,
         prompt: nextTopicPrompt,
         schema: z.object({
-          keywords: z.array(z.string()),
+          suggestions: z.array(
+            z.object({
+              stock: z.string(),
+              google: z.string(),
+              sdig: z.string(),
+            })
+          ),
         }),
       });
 
       // Print the generated text
-      const {keywords} = result.object;
-      this.consoleLog(keywords);
+      const {suggestions} = result.object;
+      this.consoleLog(suggestions);
       this.printLine();
 
       // Get the media(s) for the script
-      this.post.script[key]!.media = await controller.getMedia(key, keywords);
+      this.post.script[key]!.media = await controller.getMedia(key, suggestions);
     }
 
     // Update the post with the new media
     this.postCtrl.updatePost(this.index, this.post);
+  }
+
+  // ----------------------------------------------------------------------------------------------
+  // Print a line to the console
+  public async renderVideo(): Promise<void> {
+    // Check if the post is empty
+    if (!this.post) {
+      const post = this.postCtrl.getPost(this.index);
+      if (!post) throw new Error("Error on obtaining post (renderVideo).");
+      this.post = post;
+    }
+
+    const postVideo = this.post as any;
+
+    postVideo.language = this.language;
+    postVideo.level = parseInt(this.post.level?.replace(/\D/g, "") ?? "1", 10);
+
+    const controller = new RenderController(postVideo);
+    const videoLocation = await controller.renderVideo();
+
+    // Print the video location
+    this.consoleLog(`Video rendered at: ${videoLocation}`);
+    this.printLine();
   }
 
   // ----------------------------------------------------------------------------------------------

@@ -1,0 +1,752 @@
+{
+  "title": "Byte",
+  "topic": "Byte",
+  "level": "1 - Basic",
+  "description": "Introdução ao conceito de Byte, explicando sua relação com o Bit e sua importância como unidade básica de armazenamento de dados em tecnologia.",
+  "justification": "Após introduzir o conceito de Bit, o próximo passo lógico é explorar o Byte, que é a unidade básica de armazenamento de dados composta por 8 bits. Este tópico é fundamental para entender como os dados são armazenados e processados em dispositivos eletrônicos, e serve como base para tópicos mais complexos como tipos de dados e sistemas numéricos. Além disso, o Byte é um conceito tangível e fácil de visualizar, o que ajuda a manter o engajamento do público iniciante.",
+  "script": {
+    "hook": {
+      "text": "Você já se perguntou como os dados são armazenados no seu computador?",
+      "audio": "audio/001/hook.mp3",
+      "segments": [
+        {
+          "text": " Você",
+          "startMs": 0,
+          "endMs": 180
+        },
+        {
+          "text": " já",
+          "startMs": 180,
+          "endMs": 340
+        },
+        {
+          "text": " se",
+          "startMs": 340,
+          "endMs": 440
+        },
+        {
+          "text": " perguntou",
+          "startMs": 440,
+          "endMs": 960
+        },
+        {
+          "text": " como",
+          "startMs": 960,
+          "endMs": 1200
+        },
+        {
+          "text": " os",
+          "startMs": 1200,
+          "endMs": 1340
+        },
+        {
+          "text": " dados",
+          "startMs": 1340,
+          "endMs": 1580
+        },
+        {
+          "text": " são",
+          "startMs": 1580,
+          "endMs": 1820
+        },
+        {
+          "text": " armazenados",
+          "startMs": 1820,
+          "endMs": 2500
+        },
+        {
+          "text": " no",
+          "startMs": 2500,
+          "endMs": 2580
+        },
+        {
+          "text": " seu",
+          "startMs": 2580,
+          "endMs": 2720
+        },
+        {
+          "text": " computador?",
+          "startMs": 2720,
+          "endMs": 3180
+        }
+      ],
+      "duration": 97,
+      "media": [
+        {
+          "original": "https://videos.pexels.com/video-files/3195532/3195532-uhd_2560_1440_25fps.mp4",
+          "file": "media/001/hook/3195532-uhd_2560_1440_25fps.mp4",
+          "width": 2560,
+          "height": 1440,
+          "duration": 475
+        }
+      ]
+    },
+    "intro": {
+      "text": "Hoje vamos falar sobre o byte, a menor unidade de dados em um computador. Pense nele como um tijolo na construção de um prédio digital.",
+      "audio": "audio/001/intro.mp3",
+      "segments": [
+        {
+          "text": " Hoje",
+          "startMs": 0,
+          "endMs": 160
+        },
+        {
+          "text": " vamos",
+          "startMs": 160,
+          "endMs": 360
+        },
+        {
+          "text": " falar",
+          "startMs": 360,
+          "endMs": 680
+        },
+        {
+          "text": " sobre",
+          "startMs": 680,
+          "endMs": 980
+        },
+        {
+          "text": " o",
+          "startMs": 980,
+          "endMs": 1120
+        },
+        {
+          "text": " byte,",
+          "startMs": 1120,
+          "endMs": 1320
+        },
+        {
+          "text": " a",
+          "startMs": 1560,
+          "endMs": 2160
+        },
+        {
+          "text": " menor",
+          "startMs": 2160,
+          "endMs": 2440
+        },
+        {
+          "text": " unidade",
+          "startMs": 2440,
+          "endMs": 2900
+        },
+        {
+          "text": " de",
+          "startMs": 2900,
+          "endMs": 3080
+        },
+        {
+          "text": " dados",
+          "startMs": 3080,
+          "endMs": 3340
+        },
+        {
+          "text": " em",
+          "startMs": 3340,
+          "endMs": 3480
+        },
+        {
+          "text": " um",
+          "startMs": 3480,
+          "endMs": 3560
+        },
+        {
+          "text": " computador.",
+          "startMs": 3560,
+          "endMs": 4040
+        },
+        {
+          "text": " Pense",
+          "startMs": 5520,
+          "endMs": 5920
+        },
+        {
+          "text": " nele",
+          "startMs": 5920,
+          "endMs": 6200
+        },
+        {
+          "text": " como",
+          "startMs": 6200,
+          "endMs": 6360
+        },
+        {
+          "text": " um",
+          "startMs": 6360,
+          "endMs": 6480
+        },
+        {
+          "text": " tijolo",
+          "startMs": 6480,
+          "endMs": 6960
+        },
+        {
+          "text": " na",
+          "startMs": 6960,
+          "endMs": 7120
+        },
+        {
+          "text": " construção",
+          "startMs": 7120,
+          "endMs": 7680
+        },
+        {
+          "text": " de",
+          "startMs": 7680,
+          "endMs": 7800
+        },
+        {
+          "text": " um",
+          "startMs": 7800,
+          "endMs": 7840
+        },
+        {
+          "text": " prédio",
+          "startMs": 7840,
+          "endMs": 8180
+        },
+        {
+          "text": " digital.",
+          "startMs": 8180,
+          "endMs": 8380
+        }
+      ],
+      "duration": 238,
+      "media": [
+        {
+          "original": "https://videos.pexels.com/video-files/6466100/6466100-uhd_2560_1440_30fps.mp4",
+          "file": "media/001/intro/6466100-uhd_2560_1440_30fps.mp4",
+          "width": 2560,
+          "height": 1440,
+          "duration": 300
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/5028622/5028622-uhd_2560_1440_25fps.mp4",
+          "file": "media/001/intro/5028622-uhd_2560_1440_25fps.mp4",
+          "width": 2560,
+          "height": 1440,
+          "duration": 800
+        }
+      ]
+    },
+    "explanation": {
+      "text": "Um byte é composto por 8 bits, e cada bit é um 0 ou 1. Juntos, eles formam combinações que representam diferentes informações, como letras, números e cores. É a base de tudo que você vê na tela do seu dispositivo.",
+      "audio": "audio/001/explanation.mp3",
+      "segments": [
+        {
+          "text": " Um",
+          "startMs": 0,
+          "endMs": 140
+        },
+        {
+          "text": " byte",
+          "startMs": 140,
+          "endMs": 340
+        },
+        {
+          "text": " é",
+          "startMs": 340,
+          "endMs": 540
+        },
+        {
+          "text": " composto",
+          "startMs": 540,
+          "endMs": 1040
+        },
+        {
+          "text": " por",
+          "startMs": 1040,
+          "endMs": 1200
+        },
+        {
+          "text": " oito",
+          "startMs": 1200,
+          "endMs": 1580
+        },
+        {
+          "text": " bits,",
+          "startMs": 1580,
+          "endMs": 1780
+        },
+        {
+          "text": " e",
+          "startMs": 2040,
+          "endMs": 2500
+        },
+        {
+          "text": " cada",
+          "startMs": 2500,
+          "endMs": 2740
+        },
+        {
+          "text": " bit",
+          "startMs": 2740,
+          "endMs": 3100
+        },
+        {
+          "text": " é",
+          "startMs": 3100,
+          "endMs": 3440
+        },
+        {
+          "text": " um",
+          "startMs": 3440,
+          "endMs": 3640
+        },
+        {
+          "text": " zero",
+          "startMs": 3640,
+          "endMs": 3940
+        },
+        {
+          "text": " ou",
+          "startMs": 3940,
+          "endMs": 4360
+        },
+        {
+          "text": " um.",
+          "startMs": 4360,
+          "endMs": 4560
+        },
+        {
+          "text": " Juntos,",
+          "startMs": 6000,
+          "endMs": 6600
+        },
+        {
+          "text": " eles",
+          "startMs": 6600,
+          "endMs": 7020
+        },
+        {
+          "text": " formam",
+          "startMs": 7020,
+          "endMs": 7420
+        },
+        {
+          "text": " combinações",
+          "startMs": 7420,
+          "endMs": 8000
+        },
+        {
+          "text": " que",
+          "startMs": 8000,
+          "endMs": 8260
+        },
+        {
+          "text": " representam",
+          "startMs": 8260,
+          "endMs": 8840
+        },
+        {
+          "text": " diferentes",
+          "startMs": 8840,
+          "endMs": 9160
+        },
+        {
+          "text": " informações,",
+          "startMs": 9160,
+          "endMs": 9820
+        },
+        {
+          "text": " como",
+          "startMs": 10260,
+          "endMs": 10840
+        },
+        {
+          "text": " letras,",
+          "startMs": 10840,
+          "endMs": 11400
+        },
+        {
+          "text": " números",
+          "startMs": 11460,
+          "endMs": 11900
+        },
+        {
+          "text": " e",
+          "startMs": 11900,
+          "endMs": 12320
+        },
+        {
+          "text": " cores.",
+          "startMs": 12320,
+          "endMs": 12640
+        },
+        {
+          "text": " É",
+          "startMs": 13700,
+          "endMs": 14000
+        },
+        {
+          "text": " a",
+          "startMs": 14000,
+          "endMs": 14140
+        },
+        {
+          "text": " base",
+          "startMs": 14140,
+          "endMs": 14520
+        },
+        {
+          "text": " de",
+          "startMs": 14520,
+          "endMs": 14660
+        },
+        {
+          "text": " tudo",
+          "startMs": 14660,
+          "endMs": 14940
+        },
+        {
+          "text": " o",
+          "startMs": 14940,
+          "endMs": 15060
+        },
+        {
+          "text": " que",
+          "startMs": 15060,
+          "endMs": 15160
+        },
+        {
+          "text": " você",
+          "startMs": 15160,
+          "endMs": 15380
+        },
+        {
+          "text": " vê",
+          "startMs": 15380,
+          "endMs": 15640
+        },
+        {
+          "text": " na",
+          "startMs": 15640,
+          "endMs": 15760
+        },
+        {
+          "text": " tela",
+          "startMs": 15760,
+          "endMs": 16059.999999999998
+        },
+        {
+          "text": " do",
+          "startMs": 16059.999999999998,
+          "endMs": 16160
+        },
+        {
+          "text": " seu",
+          "startMs": 16160,
+          "endMs": 16320
+        },
+        {
+          "text": " dispositivo.",
+          "startMs": 16320,
+          "endMs": 17120
+        }
+      ],
+      "duration": 458,
+      "media": [
+        {
+          "original": "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4",
+          "file": "media/001/explanation/6963744-hd_1920_1080_25fps.mp4",
+          "width": 1920,
+          "height": 1080,
+          "duration": 300
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/4990233/4990233-hd_1920_1080_30fps.mp4",
+          "file": "media/001/explanation/4990233-hd_1920_1080_30fps.mp4",
+          "width": 1920,
+          "height": 1080,
+          "duration": 300
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/6330779/6330779-hd_1920_1080_30fps.mp4",
+          "file": "media/001/explanation/6330779-hd_1920_1080_30fps.mp4",
+          "width": 1920,
+          "height": 1080,
+          "duration": 359
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/25744127/11904066_2560_1440_15fps.mp4",
+          "file": "media/001/explanation/11904066_2560_1440_15fps.mp4",
+          "width": 2560,
+          "height": 1440,
+          "duration": 240
+        }
+      ]
+    },
+    "example": {
+      "text": "Por exemplo, a letra 'A' é representada pelo byte 01000001. Cada caractere que você digita ou imagem que vê é traduzido em bytes para que o computador possa processar.",
+      "audio": "audio/001/example.mp3",
+      "segments": [
+        {
+          "text": " Por",
+          "startMs": 0,
+          "endMs": 140
+        },
+        {
+          "text": " exemplo,",
+          "startMs": 140,
+          "endMs": 460
+        },
+        {
+          "text": " a",
+          "startMs": 620,
+          "endMs": 720
+        },
+        {
+          "text": " letra",
+          "startMs": 720,
+          "endMs": 1100
+        },
+        {
+          "text": " A",
+          "startMs": 1100,
+          "endMs": 1460
+        },
+        {
+          "text": " é",
+          "startMs": 1460,
+          "endMs": 1840
+        },
+        {
+          "text": " representada",
+          "startMs": 1840,
+          "endMs": 2660
+        },
+        {
+          "text": " pelo",
+          "startMs": 2660,
+          "endMs": 2860
+        },
+        {
+          "text": " byte",
+          "startMs": 2860,
+          "endMs": 3120
+        },
+        {
+          "text": " 01CUS",
+          "startMs": 3120,
+          "endMs": 4300
+        },
+        {
+          "text": ".01.",
+          "startMs": 4300,
+          "endMs": 5260
+        },
+        {
+          "text": " Cada",
+          "startMs": 5930,
+          "endMs": 6240
+        },
+        {
+          "text": " caractere",
+          "startMs": 6240,
+          "endMs": 6860
+        },
+        {
+          "text": " que",
+          "startMs": 6860,
+          "endMs": 7040
+        },
+        {
+          "text": " você",
+          "startMs": 7040,
+          "endMs": 7280
+        },
+        {
+          "text": " digita,",
+          "startMs": 7280,
+          "endMs": 7980
+        },
+        {
+          "text": " ou",
+          "startMs": 7980,
+          "endMs": 8520
+        },
+        {
+          "text": " imagem",
+          "startMs": 8520,
+          "endMs": 8880
+        },
+        {
+          "text": " que",
+          "startMs": 8880,
+          "endMs": 9160
+        },
+        {
+          "text": " vê,",
+          "startMs": 9160,
+          "endMs": 9360
+        },
+        {
+          "text": " é",
+          "startMs": 9460,
+          "endMs": 9800
+        },
+        {
+          "text": " traduzido",
+          "startMs": 9800,
+          "endMs": 10380
+        },
+        {
+          "text": " em",
+          "startMs": 10380,
+          "endMs": 10440
+        },
+        {
+          "text": " bytes",
+          "startMs": 10440,
+          "endMs": 10740
+        },
+        {
+          "text": " para",
+          "startMs": 10740,
+          "endMs": 11020
+        },
+        {
+          "text": " que",
+          "startMs": 11020,
+          "endMs": 11180
+        },
+        {
+          "text": " o",
+          "startMs": 11180,
+          "endMs": 11320
+        },
+        {
+          "text": " computador",
+          "startMs": 11320,
+          "endMs": 11940
+        },
+        {
+          "text": " possa",
+          "startMs": 11940,
+          "endMs": 12320
+        },
+        {
+          "text": " processar.",
+          "startMs": 12320,
+          "endMs": 12980
+        }
+      ],
+      "duration": 351,
+      "media": [
+        {
+          "original": "https://videos.pexels.com/video-files/6331338/6331338-hd_1080_1920_30fps.mp4",
+          "file": "media/001/example/6331338-hd_1080_1920_30fps.mp4",
+          "width": 1080,
+          "height": 1920,
+          "duration": 89
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/12779321/12779321-hd_1920_1080_30fps.mp4",
+          "file": "media/001/example/12779321-hd_1920_1080_30fps.mp4",
+          "width": 1920,
+          "height": 1080,
+          "duration": 779
+        },
+        {
+          "original": "https://videos.pexels.com/video-files/5925283/5925283-uhd_1440_2560_24fps.mp4",
+          "file": "media/001/example/5925283-uhd_1440_2560_24fps.mp4",
+          "width": 1440,
+          "height": 2560,
+          "duration": 239
+        }
+      ]
+    },
+    "engagement": {
+      "text": "Qual foi a coisa mais interessante que você aprendeu sobre bytes hoje? Compartilhe nos comentários!",
+      "audio": "audio/001/engagement.mp3",
+      "segments": [
+        {
+          "text": " Qual",
+          "startMs": 0,
+          "endMs": 160
+        },
+        {
+          "text": " foi",
+          "startMs": 160,
+          "endMs": 280
+        },
+        {
+          "text": " a",
+          "startMs": 280,
+          "endMs": 340
+        },
+        {
+          "text": " coisa",
+          "startMs": 340,
+          "endMs": 580
+        },
+        {
+          "text": " mais",
+          "startMs": 580,
+          "endMs": 800
+        },
+        {
+          "text": " interessante",
+          "startMs": 800,
+          "endMs": 1300
+        },
+        {
+          "text": " que",
+          "startMs": 1300,
+          "endMs": 1560
+        },
+        {
+          "text": " você",
+          "startMs": 1560,
+          "endMs": 1760
+        },
+        {
+          "text": " aprendeu",
+          "startMs": 1760,
+          "endMs": 2240
+        },
+        {
+          "text": " sobre",
+          "startMs": 2240,
+          "endMs": 2420
+        },
+        {
+          "text": " bytes",
+          "startMs": 2420,
+          "endMs": 2720
+        },
+        {
+          "text": " hoje?",
+          "startMs": 2720,
+          "endMs": 3020
+        },
+        {
+          "text": " Compartilhe",
+          "startMs": 4000,
+          "endMs": 4520
+        },
+        {
+          "text": " nos",
+          "startMs": 4520,
+          "endMs": 4600
+        },
+        {
+          "text": " comentários!",
+          "startMs": 4600,
+          "endMs": 4860
+        }
+      ],
+      "duration": 149,
+      "media": [
+        {
+          "original": "https://videos.pexels.com/video-files/8720754/8720754-uhd_4096_2160_25fps.mp4",
+          "file": "media/001/engagement/8720754-uhd_4096_2160_25fps.mp4",
+          "width": 4096,
+          "height": 2160,
+          "duration": 775
+        }
+      ]
+    }
+  },
+  "language": "pt"
+}

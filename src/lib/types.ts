@@ -3,9 +3,12 @@
 export type AudioProps = {
   text: string;
   audio: string;
-  segments: ScriptSegment[];
   duration: number;
 };
+
+// ------------------------------------------------------------------------------------------------
+
+export type KenBurnsDirection = "up" | "down" | "left" | "right" | "none";
 
 // ------------------------------------------------------------------------------------------------
 
@@ -15,18 +18,20 @@ export type Media = {
   width?: number;
   height?: number;
   duration?: number;
+  kenBurnsDirection?: KenBurnsDirection;
 };
 
 // ------------------------------------------------------------------------------------------------
 
 export type Post = {
-  title?: string;
-  topic?: string;
-  level?: string;
-  description?: string;
-  justification?: string;
-  difficulty?: string;
-  script?: Script;
+  language: string;
+  title: string;
+  topic: string;
+  level: number;
+  description: string;
+  justification: string;
+  difficulty: string;
+  script: Script;
   caption?: string;
 };
 
@@ -40,11 +45,11 @@ export type PostSchema = {
 // ------------------------------------------------------------------------------------------------
 
 export type Script = {
-  hook?: ScriptSequence;
-  intro?: ScriptSequence;
-  explanation?: ScriptSequence;
-  example?: ScriptSequence;
-  engagement?: ScriptSequence;
+  hook: ScriptSequence;
+  intro: ScriptSequence;
+  explanation: ScriptSequence;
+  example: ScriptSequence;
+  engagement: ScriptSequence;
 };
 
 // ------------------------------------------------------------------------------------------------

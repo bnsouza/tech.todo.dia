@@ -65,8 +65,8 @@ class Model:
                     result_segments.append(
                         {
                             "text": word.word,
-                            "startMs": word.start,
-                            "endMs": word.end,
+                            "startMs": word.start * 1000,
+                            "endMs": word.end * 1000,
                         }
                     )
 

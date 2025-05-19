@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 // ------------------------------------------------------------------------------------------------
 
-import {createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync} from "fs";
+import {createWriteStream, existsSync, mkdirSync, readFileSync} from "fs";
 import {createReadStream} from "node:fs";
 import * as path from "path";
 import {pipeline, Readable} from "stream";
@@ -16,16 +16,18 @@ import {AudioProps, ScriptTexts} from "../types";
 export class AudioController {
   private client;
   private index: string;
+  private language: string;
   private playbackRate: number;
 
   // ----------------------------------------------------------------------------------------------
   // Constructor
-  constructor(index: number, playbackRate = 1) {
+  constructor(index: number, language: string, playbackRate = 1) {
     this.client = new ElevenLabsClient({
       apiKey: process.env.ELEVENLABS_API_KEY ?? "",
     });
 
     this.index = index.toString().padStart(3, "0");
+    this.language = language;
     this.playbackRate = playbackRate;
   }
 
@@ -54,11 +56,12 @@ export class AudioController {
       await this.saveFile(audio, filePath);
 
       // Call Whisper to get timestamps for captions
-      await this.callWhisper(key, filePath);
+      const segments = await this.callWhisper(key, filePath);
 
       audioScript[key] = {
         text: script[key],
-        audio: path.relative(path.join(audioDir, "../../.."), filePath),
+        audio: path.relative(path.join(audioDir, "../.."), filePath),
+        segments,
         duration: await this.getDurationInFrames(filePath),
       };
     }
@@ -72,18 +75,18 @@ export class AudioController {
     // Read the audio file and transform it into base64
     const audioBuffer = readFileSync(filePath);
     const base64 = audioBuffer.toString("base64");
-    console.log("base64:", base64);
 
-    const resp = await fetch(`https://${process.env.BASETEN_MODEL}.api.baseten.co/${process.env.BASETEN_ENV}/predict`, {
-      method: "POST",
-      headers: {Authorization: `Api-Key ${process.env.BASETEN_API_KEY}`},
-      body: JSON.stringify({audio: base64}),
-    });
+    const resp = await fetch(
+      `https://${process.env.BASETEN_WHISPER_MODEL}.api.baseten.co/${process.env.BASETEN_ENV}/predict`,
+      {
+        method: "POST",
+        headers: {Authorization: `Api-Key ${process.env.BASETEN_API_KEY}`},
+        body: JSON.stringify({audio: base64, language: this.language}),
+      }
+    );
 
     const data = await resp.json();
-    console.log("Whisper Response", data);
-
-    writeFileSync(path.join(__dirname, `../../public/audio/${this.index}/${key}.json`), data);
+    return data.segments;
   }
 
   // ----------------------------------------------------------------------------------------------
